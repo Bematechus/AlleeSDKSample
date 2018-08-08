@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.storeKey = storeKey
         
         UserDefaults.standard.set(storeKey, forKey: "storeKey")
-        BroadcastDiscovery.shared.update(storeKey: storeKey ?? "")
+        AlleeSDK.shared.update(storeKey: storeKey ?? "")
     }
     
     

@@ -1,0 +1,16 @@
+PODS:
+  - AlleeSDK (0.3)
+
+DEPENDENCIES:
+  - AlleeSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AlleeSDK
+
+SPEC CHECKSUMS:
+  AlleeSDK: 81b9d179da116f21efbfd7c0a1a1d29304686882
+
+PODFILE CHECKSUM: 2ed5dc87f6070a4fa2a499a5b70590bedea2fed8
+
+COCOAPODS: 1.5.3

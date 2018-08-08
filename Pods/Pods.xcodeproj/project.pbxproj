@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37E009155CE13CEB97E71F8D95E0F675 /* SocketSendOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EDA11B9C21A4E1A47872F818ADA67F /* SocketSendOrder.swift */; };
+		4DBCD7F4F62E61E47DF791EB42839D4D /* AlleeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E99EE89E0F60D66179D228CF5DF0C4F /* AlleeOrder.swift */; };
+		52E1F6D130C4DC93F118C9A72C242DB8 /* Pods-AlleeSDKSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AFB9B379B496C3CAB74CBABB498803 /* Pods-AlleeSDKSample-dummy.m */; };
+		55B3B659960384C8356401979E2AFE65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		655E992390F789A3DFB56DC6A4CB8AEF /* AlleeSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 150555CD0D9F0BDB7EACB4B360CDB4A6 /* AlleeSDK-dummy.m */; };
+		68E1C5516054D8D8BBD67F3E480444D6 /* Pods-AlleeSDKSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4B7430F4B430244962D4EAD4AAC573 /* Pods-AlleeSDKSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7854893E81D11DE679A3C0607D5EE378 /* AlleeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30006B86AD1FE5B29B4D7971F7E6C5C8 /* AlleeSDK.swift */; };
+		85ACFE55C7CDEBB098EAA4F7230035C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		879A7677C26C2BCE31DFF39EA33BDE5C /* AlleeCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B001D58DE1A1CA2527FB3FC65DC5CFC7 /* AlleeCustomer.swift */; };
+		94E9FCCCE8BFA6752DAB906EBE2F376B /* AlleeTransType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E891CCCC695F0E263EAFC39DBD288E80 /* AlleeTransType.swift */; };
+		B95A78A4CA9E878EC46E566E7C486C5D /* AlleeSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6844AB8C88B806CC052A53EF7422E4B7 /* AlleeSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC6D51B07AA56BC826F86A2793D6FA84 /* AlleeCondiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E626D5F3E92CA10C59DBC4E43F6A556 /* AlleeCondiment.swift */; };
+		C60BC69C2EE2439B0A46BC74D27D7D22 /* AlleeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4685BDF2A7713076E64C8A121C123E6 /* AlleeItem.swift */; };
+		E9601DEB990235D2A7D1C23B2B844CC9 /* AlleeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = FC81E87D9EC2A708AFA8D59BA60BC715 /* AlleeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74A0B92DDACB7EF0F424379EACEDB173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A522492EDFBA9024849F508B1D5CFF8;
+			remoteInfo = AlleeSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CC40C14C058601F0278B0E58F140C8A /* Pods-AlleeSDKSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlleeSDKSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		150555CD0D9F0BDB7EACB4B360CDB4A6 /* AlleeSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlleeSDK-dummy.m"; sourceTree = "<group>"; };
+		168CE7B48A00803B7F55E253B7831421 /* BSocketHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSocketHelper.framework; path = Frameworks/BSocketHelper.framework; sourceTree = "<group>"; };
+		2E626D5F3E92CA10C59DBC4E43F6A556 /* AlleeCondiment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCondiment.swift; path = Frameworks/AlleeCommon/Models/AlleeCondiment.swift; sourceTree = "<group>"; };
+		30006B86AD1FE5B29B4D7971F7E6C5C8 /* AlleeSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSDK.swift; path = AlleeSDK/AlleeSDK.swift; sourceTree = "<group>"; };
+		38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlleeSDK.framework; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A460569AFF8E74FE1E2BA04DBDC83D8 /* AlleeSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlleeSDK.xcconfig; sourceTree = "<group>"; };
+		528E803FA180095CE2CB7A2102A2C698 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		548F042E29106CCDB4AC6D128CB3D65B /* Pods-AlleeSDKSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlleeSDKSample-frameworks.sh"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5E99EE89E0F60D66179D228CF5DF0C4F /* AlleeOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrder.swift; path = Frameworks/AlleeCommon/Models/AlleeOrder.swift; sourceTree = "<group>"; };
+		6801683C5C7AEA174E734D320CBE5EC2 /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		6844AB8C88B806CC052A53EF7422E4B7 /* AlleeSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-umbrella.h"; sourceTree = "<group>"; };
+		713FF18B12C874C82EB7B88477391C29 /* AlleeSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-prefix.pch"; sourceTree = "<group>"; };
+		8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AlleeSDKSample.framework; path = "Pods-AlleeSDKSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A76C5A593FD708482B4B0A966BD3E0A /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3EDA11B9C21A4E1A47872F818ADA67F /* SocketSendOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketSendOrder.swift; path = Frameworks/AlleeCommon/Messages/SocketSendOrder.swift; sourceTree = "<group>"; };
+		ABD4D29A5C5D9AD83D1E5AD80A606F61 /* Pods-AlleeSDKSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AlleeSDKSample.modulemap"; sourceTree = "<group>"; };
+		B001D58DE1A1CA2527FB3FC65DC5CFC7 /* AlleeCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCustomer.swift; path = Frameworks/AlleeCommon/Models/AlleeCustomer.swift; sourceTree = "<group>"; };
+		BE4B7430F4B430244962D4EAD4AAC573 /* Pods-AlleeSDKSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AlleeSDKSample-umbrella.h"; sourceTree = "<group>"; };
+		BED4DE3C6262C4D3C864F457B33231E2 /* Pods-AlleeSDKSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlleeSDKSample-resources.sh"; sourceTree = "<group>"; };
+		BF29C272247B3DC855F7CE4DC97977F7 /* Pods-AlleeSDKSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AlleeSDKSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0AFB9B379B496C3CAB74CBABB498803 /* Pods-AlleeSDKSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AlleeSDKSample-dummy.m"; sourceTree = "<group>"; };
+		C4DDD562331E2A4E1299717778DF6C8E /* AlleeSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlleeSDK.modulemap; sourceTree = "<group>"; };
+		D4685BDF2A7713076E64C8A121C123E6 /* AlleeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItem.swift; path = Frameworks/AlleeCommon/Models/AlleeItem.swift; sourceTree = "<group>"; };
+		E891CCCC695F0E263EAFC39DBD288E80 /* AlleeTransType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeTransType.swift; path = Frameworks/AlleeCommon/Models/AlleeTransType.swift; sourceTree = "<group>"; };
+		F5FAF56E6EAD2B49FB652FC8CCEAE440 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC81E87D9EC2A708AFA8D59BA60BC715 /* AlleeSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlleeSDK.h; path = AlleeSDK/AlleeSDK.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8FFBA1F740DEAD2CC2AAF8C7BC993A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85ACFE55C7CDEBB098EAA4F7230035C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED0829C97A78AEBB703AF00847DB17C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B3B659960384C8356401979E2AFE65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25677EC19911B8FDB96BE0313E1E9F3B /* Pods-AlleeSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				528E803FA180095CE2CB7A2102A2C698 /* Info.plist */,
+				ABD4D29A5C5D9AD83D1E5AD80A606F61 /* Pods-AlleeSDKSample.modulemap */,
+				BF29C272247B3DC855F7CE4DC97977F7 /* Pods-AlleeSDKSample-acknowledgements.markdown */,
+				0CC40C14C058601F0278B0E58F140C8A /* Pods-AlleeSDKSample-acknowledgements.plist */,
+				C0AFB9B379B496C3CAB74CBABB498803 /* Pods-AlleeSDKSample-dummy.m */,
+				548F042E29106CCDB4AC6D128CB3D65B /* Pods-AlleeSDKSample-frameworks.sh */,
+				BED4DE3C6262C4D3C864F457B33231E2 /* Pods-AlleeSDKSample-resources.sh */,
+				BE4B7430F4B430244962D4EAD4AAC573 /* Pods-AlleeSDKSample-umbrella.h */,
+				6801683C5C7AEA174E734D320CBE5EC2 /* Pods-AlleeSDKSample.debug.xcconfig */,
+				8A76C5A593FD708482B4B0A966BD3E0A /* Pods-AlleeSDKSample.release.xcconfig */,
+			);
+			name = "Pods-AlleeSDKSample";
+			path = "Target Support Files/Pods-AlleeSDKSample";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		67CAE0A24B28AB9E209B6FD46C7FFC30 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4DDD562331E2A4E1299717778DF6C8E /* AlleeSDK.modulemap */,
+				3A460569AFF8E74FE1E2BA04DBDC83D8 /* AlleeSDK.xcconfig */,
+				150555CD0D9F0BDB7EACB4B360CDB4A6 /* AlleeSDK-dummy.m */,
+				713FF18B12C874C82EB7B88477391C29 /* AlleeSDK-prefix.pch */,
+				6844AB8C88B806CC052A53EF7422E4B7 /* AlleeSDK-umbrella.h */,
+				F5FAF56E6EAD2B49FB652FC8CCEAE440 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlleeSDK";
+			sourceTree = "<group>";
+		};
+		7A8EC369341B1B7713A676F502505A94 /* AlleeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2E626D5F3E92CA10C59DBC4E43F6A556 /* AlleeCondiment.swift */,
+				B001D58DE1A1CA2527FB3FC65DC5CFC7 /* AlleeCustomer.swift */,
+				D4685BDF2A7713076E64C8A121C123E6 /* AlleeItem.swift */,
+				5E99EE89E0F60D66179D228CF5DF0C4F /* AlleeOrder.swift */,
+				FC81E87D9EC2A708AFA8D59BA60BC715 /* AlleeSDK.h */,
+				30006B86AD1FE5B29B4D7971F7E6C5C8 /* AlleeSDK.swift */,
+				E891CCCC695F0E263EAFC39DBD288E80 /* AlleeTransType.swift */,
+				A3EDA11B9C21A4E1A47872F818ADA67F /* SocketSendOrder.swift */,
+				8D83FF6B42BB5C1CE0C59ED80F708AE6 /* Frameworks */,
+				67CAE0A24B28AB9E209B6FD46C7FFC30 /* Support Files */,
+			);
+			name = AlleeSDK;
+			path = AlleeSDK;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A82D1E07F27138EE0D5897A990221939 /* Pods */,
+				CB23F7DD50F6BADAAE2EE573F0FAFA4E /* Products */,
+				90B92FA8A80CFD356FAD9CF1442CB806 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D83FF6B42BB5C1CE0C59ED80F708AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				168CE7B48A00803B7F55E253B7831421 /* BSocketHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90B92FA8A80CFD356FAD9CF1442CB806 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				25677EC19911B8FDB96BE0313E1E9F3B /* Pods-AlleeSDKSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A82D1E07F27138EE0D5897A990221939 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A8EC369341B1B7713A676F502505A94 /* AlleeSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB23F7DD50F6BADAAE2EE573F0FAFA4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */,
+				8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D3F2C7D79585920E0B8877747C23039 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B95A78A4CA9E878EC46E566E7C486C5D /* AlleeSDK-umbrella.h in Headers */,
+				E9601DEB990235D2A7D1C23B2B844CC9 /* AlleeSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		973637C399A180D0989BF0E47C6592E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E1C5516054D8D8BBD67F3E480444D6 /* Pods-AlleeSDKSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6CD4353E2D87D13D5E628FBF5D374BE1 /* Pods-AlleeSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4888C77C3FD32EA5AA339976C58D67 /* Build configuration list for PBXNativeTarget "Pods-AlleeSDKSample" */;
+			buildPhases = (
+				D8C9578CEAD47A9D9A5F10D37D1E0721 /* Sources */,
+				D8FFBA1F740DEAD2CC2AAF8C7BC993A0 /* Frameworks */,
+				973637C399A180D0989BF0E47C6592E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A0F44438D55F404AFE5956265F0B38 /* PBXTargetDependency */,
+			);
+			name = "Pods-AlleeSDKSample";
+			productName = "Pods-AlleeSDKSample";
+			productReference = 8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A522492EDFBA9024849F508B1D5CFF8 /* AlleeSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC66A9BB509A4D93BBF33CEB0522C89A /* Build configuration list for PBXNativeTarget "AlleeSDK" */;
+			buildPhases = (
+				9ADBF22EB052703931FC593CA5BA469B /* Sources */,
+				ED0829C97A78AEBB703AF00847DB17C5 /* Frameworks */,
+				5D3F2C7D79585920E0B8877747C23039 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlleeSDK;
+			productName = AlleeSDK;
+			productReference = 38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CB23F7DD50F6BADAAE2EE573F0FAFA4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A522492EDFBA9024849F508B1D5CFF8 /* AlleeSDK */,
+				6CD4353E2D87D13D5E628FBF5D374BE1 /* Pods-AlleeSDKSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9ADBF22EB052703931FC593CA5BA469B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6D51B07AA56BC826F86A2793D6FA84 /* AlleeCondiment.swift in Sources */,
+				879A7677C26C2BCE31DFF39EA33BDE5C /* AlleeCustomer.swift in Sources */,
+				C60BC69C2EE2439B0A46BC74D27D7D22 /* AlleeItem.swift in Sources */,
+				4DBCD7F4F62E61E47DF791EB42839D4D /* AlleeOrder.swift in Sources */,
+				655E992390F789A3DFB56DC6A4CB8AEF /* AlleeSDK-dummy.m in Sources */,
+				7854893E81D11DE679A3C0607D5EE378 /* AlleeSDK.swift in Sources */,
+				94E9FCCCE8BFA6752DAB906EBE2F376B /* AlleeTransType.swift in Sources */,
+				37E009155CE13CEB97E71F8D95E0F675 /* SocketSendOrder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C9578CEAD47A9D9A5F10D37D1E0721 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E1F6D130C4DC93F118C9A72C242DB8 /* Pods-AlleeSDKSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9A0F44438D55F404AFE5956265F0B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AlleeSDK;
+			target = 8A522492EDFBA9024849F508B1D5CFF8 /* AlleeSDK */;
+			targetProxy = 74A0B92DDACB7EF0F424379EACEDB173 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02DF60A7B74514A15B694849BE422958 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6801683C5C7AEA174E734D320CBE5EC2 /* Pods-AlleeSDKSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		785840A31FE64F2D3AE9049A912A77BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A76C5A593FD708482B4B0A966BD3E0A /* Pods-AlleeSDKSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9FA0FDBBDE1A4AA94E0394023E987CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A460569AFF8E74FE1E2BA04DBDC83D8 /* AlleeSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlleeSDK/AlleeSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
+				PRODUCT_MODULE_NAME = AlleeSDK;
+				PRODUCT_NAME = AlleeSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DDAD223B77277287ADC8AC06B5F51566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A460569AFF8E74FE1E2BA04DBDC83D8 /* AlleeSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlleeSDK/AlleeSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
+				PRODUCT_MODULE_NAME = AlleeSDK;
+				PRODUCT_NAME = AlleeSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A4888C77C3FD32EA5AA339976C58D67 /* Build configuration list for PBXNativeTarget "Pods-AlleeSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02DF60A7B74514A15B694849BE422958 /* Debug */,
+				785840A31FE64F2D3AE9049A912A77BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC66A9BB509A4D93BBF33CEB0522C89A /* Build configuration list for PBXNativeTarget "AlleeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FA0FDBBDE1A4AA94E0394023E987CDA /* Debug */,
+				DDAD223B77277287ADC8AC06B5F51566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

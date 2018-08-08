@@ -1,0 +1,6 @@
+framework module Pods_AlleeSDKSample {
+  umbrella header "Pods-AlleeSDKSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module AlleeSDK {
+  umbrella header "AlleeSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

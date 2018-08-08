@@ -7,23 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E9AC9A38554CD67C3BE4B8E /* Pods_AlleeSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */; };
+		FA17980A2119D05500E4129E /* AlleeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; };
+		FA17980B2119D05500E4129E /* AlleeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAF035D1210B66FA005528C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D0210B66FA005528C8 /* AppDelegate.swift */; };
 		FAF035D3210B66FA005528C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D2210B66FA005528C8 /* ViewController.swift */; };
 		FAF035D6210B66FA005528C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D4210B66FA005528C8 /* Main.storyboard */; };
 		FAF035D8210B66FA005528C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D7210B66FA005528C8 /* Assets.xcassets */; };
 		FAF035DB210B66FA005528C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D9210B66FA005528C8 /* LaunchScreen.storyboard */; };
-		FAF035E3210B6D52005528C8 /* AlleeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; };
-		FAF035E4210B6D52005528C8 /* AlleeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FAF035E5210B6D52005528C8 /* Embed Frameworks */ = {
+		FA17980C2119D05500E4129E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FAF035E4210B6D52005528C8 /* AlleeSDK.framework in Embed Frameworks */,
+				FA17980B2119D05500E4129E /* AlleeSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +32,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
+		B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 		FAF035CD210B66FA005528C8 /* AlleeSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlleeSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF035D0210B66FA005528C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF035D2210B66FA005528C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,19 +50,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF035E3210B6D52005528C8 /* AlleeSDK.framework in Frameworks */,
+				FA17980A2119D05500E4129E /* AlleeSDK.framework in Frameworks */,
+				9E9AC9A38554CD67C3BE4B8E /* Pods_AlleeSDKSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FAF035C4210B66FA005528C8 = {
+		CA7B72ACD37D92E31A742E44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */,
+				A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA1798092119D00E00E4129E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				FAF035E2210B6D51005528C8 /* AlleeSDK.framework */,
+				08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAF035C4210B66FA005528C8 = {
+			isa = PBXGroup;
+			children = (
 				FAF035CF210B66FA005528C8 /* AlleeSDKSample */,
 				FAF035CE210B66FA005528C8 /* Products */,
+				FA1798092119D00E00E4129E /* Frameworks */,
+				CA7B72ACD37D92E31A742E44 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,10 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF035DF210B66FA005528C8 /* Build configuration list for PBXNativeTarget "AlleeSDKSample" */;
 			buildPhases = (
+				353F0987810A13EA29169A7E /* [CP] Check Pods Manifest.lock */,
 				FAF035C9210B66FA005528C8 /* Sources */,
 				FAF035CA210B66FA005528C8 /* Frameworks */,
 				FAF035CB210B66FA005528C8 /* Resources */,
-				FAF035E5210B6D52005528C8 /* Embed Frameworks */,
+				FA17980C2119D05500E4129E /* Embed Frameworks */,
+				2779C0288ADB9792408FDA47 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +175,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2779C0288ADB9792408FDA47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample-frameworks.sh",
+				"${PODS_ROOT}/AlleeSDK/Frameworks/BSocketHelper.framework",
+				"${BUILT_PRODUCTS_DIR}/AlleeSDK/AlleeSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSocketHelper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlleeSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		353F0987810A13EA29169A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlleeSDKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAF035C9210B66FA005528C8 /* Sources */ = {
@@ -298,6 +365,7 @@
 		};
 		FAF035E0210B66FA005528C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +373,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = AlleeSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
@@ -321,6 +390,7 @@
 		};
 		FAF035E1210B66FA005528C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +398,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = AlleeSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
