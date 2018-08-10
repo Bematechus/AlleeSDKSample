@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var storeKey: String?
     static var kdsStation: String?
     static var port: Int = 1111
+    static var env: Int = 0
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -29,7 +30,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AppDelegate.port = port
         }
         
-        AlleeSDK.shared.start(withStoreKey: AppDelegate.storeKey ?? "", andPort: AppDelegate.port, env: .stage)
+        AppDelegate.env = UserDefaults.standard.integer(forKey: "env")
+        
+        AlleeSDK.shared.start(withStoreKey: AppDelegate.storeKey ?? "", andPort: AppDelegate.port,
+                              env: AlleeSDK.Environment(rawValue: AppDelegate.env)!)
     
         return true
     }
@@ -47,6 +51,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.kdsStation = kdsStation
         
         UserDefaults.standard.set(kdsStation, forKey: "kdsStation")
+    }
+    
+    
+    static func update(env: Int) {
+        AppDelegate.env = env
+        
+        UserDefaults.standard.set(kdsStation, forKey: "env")
     }
     
     

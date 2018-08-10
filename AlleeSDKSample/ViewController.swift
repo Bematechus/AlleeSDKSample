@@ -15,12 +15,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfPort: UITextField!
     @IBOutlet weak var tfStation: UITextField!
     @IBOutlet weak var lbStatus: UILabel!
+    @IBOutlet weak var segEnv: UISegmentedControl!
     
     private var layouts = 8
     private var nextOrderId = arc4random_uniform(1000000 - 1) + 1
     
     private var destination = "DiningIn"
-        
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
         
         self.tfStation.text = AppDelegate.kdsStation
         self.tfStation.delegate = self
+        
+        self.segEnv.selectedSegmentIndex = AppDelegate.env
     }
     
     
@@ -341,6 +344,11 @@ class ViewController: UIViewController {
         self.nextOrderId += 1
         
         return order
+    }
+    
+    
+    @IBAction func changeEnv(_ sender: UISegmentedControl) {
+        AppDelegate.update(env: sender.selectedSegmentIndex)
     }
 }
 
