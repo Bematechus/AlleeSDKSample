@@ -16,22 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     static var storeKey: String?
     static var kdsStation: String?
+    static var port: Int = 1111
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        if let storeKey = UserDefaults.standard.string(forKey: "storeKey") {
-            AppDelegate.storeKey = storeKey
-            
-        } else {
-            AppDelegate.storeKey = "2bc66783-b168-4968-8a50-906b15dfbcf8"
-            UserDefaults.standard.set(AppDelegate.storeKey!, forKey: "storeKey")
+        AppDelegate.storeKey = UserDefaults.standard.string(forKey: "storeKey")
+        AppDelegate.kdsStation = UserDefaults.standard.string(forKey: "kdsStation")
+        
+        let port = UserDefaults.standard.integer(forKey: "port")
+        if port > 0 {
+            AppDelegate.port = port
         }
         
-        if let kdsStation = UserDefaults.standard.string(forKey: "kdsStation") {
-            AppDelegate.kdsStation = kdsStation
-        }
-        
-        AlleeSDK.shared.start(withStoreKey: AppDelegate.storeKey ?? "")
+        AlleeSDK.shared.start(withStoreKey: AppDelegate.storeKey ?? "", andPort: AppDelegate.port, env: .stage)
     
         return true
     }
@@ -49,6 +47,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.kdsStation = kdsStation
         
         UserDefaults.standard.set(kdsStation, forKey: "kdsStation")
+    }
+    
+    
+    static func update(port: Int) {
+        AppDelegate.port = port
+        
+        do {
+            try AlleeSDK.shared.update(port: port)
+            UserDefaults.standard.set(port, forKey: "port")
+            
+        } catch {
+            print("Failed on change port")
+        }
     }
 }
 

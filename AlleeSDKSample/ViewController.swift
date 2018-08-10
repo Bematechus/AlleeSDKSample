@@ -12,6 +12,7 @@ import AlleeSDK
 class ViewController: UIViewController {
     
     @IBOutlet weak var tfStoreKey: UITextField!
+    @IBOutlet weak var tfPort: UITextField!
     @IBOutlet weak var tfStation: UITextField!
     @IBOutlet weak var lbStatus: UILabel!
     
@@ -27,6 +28,9 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.tfStoreKey.text = AppDelegate.storeKey
         self.tfStoreKey.delegate = self
+        
+        self.tfPort.text = "\(AppDelegate.port)"
+        self.tfPort.delegate = self
         
         self.tfStation.text = AppDelegate.kdsStation
         self.tfStation.delegate = self
@@ -414,6 +418,9 @@ extension ViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField == self.tfStation {
             AppDelegate.update(kdsStation: self.tfStation.text)
+            
+        } else if textField == self.tfPort {
+            AppDelegate.update(port: Int(self.tfPort.text ?? "0") ?? 0)
             
         } else {
             AppDelegate.update(storeKey: self.tfStoreKey.text)
