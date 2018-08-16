@@ -47,7 +47,7 @@ class ViewController: UIViewController {
                 self.condiment("Tomatoes"),
                 self.condiment("Pickles"),
                 self.condiment("Hot Pepper Relish")
-                ]),
+                ], summary: self.summary("Soy burger", qty: 2)),
             
             self.item("French Fries", qty: 2, condiments: [
                 self.condiment("Mayonnaise")
@@ -315,6 +315,15 @@ class ViewController: UIViewController {
     }
     
     
+    private func summary(_ name: String, qty: Int) -> AlleeSummary {
+        let summary = AlleeSummary()
+        summary.ingredientName = name
+        summary.ingredientQuantity = qty
+        
+        return summary
+    }
+    
+    
     private func condiment(_ name: String) -> AlleeCondiment {
         let condiment = AlleeCondiment()
         condiment.id = UUID().uuidString
@@ -324,13 +333,16 @@ class ViewController: UIViewController {
     }
     
     
-    private func item(_ name: String, qty: Int, condiments: [AlleeCondiment]?) -> AlleeItem {
+    private func item(_ name: String, qty: Int, condiments: [AlleeCondiment]?,
+                      summary: AlleeSummary?=nil) -> AlleeItem {
+        
         let item = AlleeItem()
         item.id = UUID().uuidString
         item.name = name
         item.kDSStation = self.tfStation.text
         item.quantity = qty
         item.condiments = condiments
+        item.summary = summary
         
         return item
     }

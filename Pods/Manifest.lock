@@ -1,5 +1,5 @@
 PODS:
-  - AlleeSDK (1.1)
+  - AlleeSDK (1.2)
 
 DEPENDENCIES:
   - AlleeSDK
@@ -9,7 +9,7 @@ SPEC REPOS:
     - AlleeSDK
 
 SPEC CHECKSUMS:
-  AlleeSDK: 62076b388b8200a8bd3f990b92f4ca03ec9db6d5
+  AlleeSDK: 3b2afe0e09ed88028903fc6e646aeaf912601ee7
 
 PODFILE CHECKSUM: 2ed5dc87f6070a4fa2a499a5b70590bedea2fed8
 
