@@ -361,6 +361,14 @@ class ViewController: UIViewController {
     
     @IBAction func changeEnv(_ sender: UISegmentedControl) {
         AppDelegate.update(env: sender.selectedSegmentIndex)
+        
+        let alert = UIAlertController(title: "Change environment",
+                                      message: "You need to reopen the App to apply this change", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action) in
+            exit(EXIT_SUCCESS)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

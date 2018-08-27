@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,7 +38,7 @@
 		00B6C25F4C2545EAD0B5FC30985CCB80 /* AlleeTransType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeTransType.swift; path = Frameworks/AlleeCommon/Models/AlleeTransType.swift; sourceTree = "<group>"; };
 		0CC40C14C058601F0278B0E58F140C8A /* Pods-AlleeSDKSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlleeSDKSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		2198F80B119FA9152FDCAC7A8EFEDD27 /* AlleeSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSummary.swift; path = Frameworks/AlleeCommon/Models/AlleeSummary.swift; sourceTree = "<group>"; };
-		38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlleeSDK.framework; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EBDEFC1880F232F1F70D9C8E11BA32 /* AlleeSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSDK.swift; path = AlleeSDK/AlleeSDK.swift; sourceTree = "<group>"; };
 		4BC97416E22DDD5559F51C54D06885CA /* AlleeSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlleeSDK.modulemap; sourceTree = "<group>"; };
 		528E803FA180095CE2CB7A2102A2C698 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,10 +49,10 @@
 		6801683C5C7AEA174E734D320CBE5EC2 /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 		6F37D1FFF7C6B3478467DF84DDC89F82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C1926C8D22F59C3B27C7C75C8B5DE2A /* AlleeOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrder.swift; path = Frameworks/AlleeCommon/Models/AlleeOrder.swift; sourceTree = "<group>"; };
-		8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AlleeSDKSample.framework; path = "Pods-AlleeSDKSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C71531920DA766658F535AF74C86CC /* AlleeSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-umbrella.h"; sourceTree = "<group>"; };
 		8A76C5A593FD708482B4B0A966BD3E0A /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ABD4D29A5C5D9AD83D1E5AD80A606F61 /* Pods-AlleeSDKSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AlleeSDKSample.modulemap"; sourceTree = "<group>"; };
 		B1EE5223C815ED310A42AC9995B00E63 /* BSocketHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSocketHelper.framework; path = Frameworks/BSocketHelper.framework; sourceTree = "<group>"; };
 		BE4B7430F4B430244962D4EAD4AAC573 /* Pods-AlleeSDKSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AlleeSDKSample-umbrella.h"; sourceTree = "<group>"; };
@@ -169,7 +169,6 @@
 				C6CF046736C76D4B1FAA0A54CB6A769B /* Frameworks */,
 				57FD2BC4AD172B2C9B4DBC47C87CA3C8 /* Support Files */,
 			);
-			name = AlleeSDK;
 			path = AlleeSDK;
 			sourceTree = "<group>";
 		};
@@ -263,7 +262,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -338,11 +337,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
 				OTHER_LDFLAGS = "";
@@ -414,6 +409,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -435,11 +431,7 @@
 				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
 				PRODUCT_MODULE_NAME = AlleeSDK;
 				PRODUCT_NAME = AlleeSDK;
@@ -473,11 +465,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
 				OTHER_LDFLAGS = "";
@@ -575,11 +563,7 @@
 				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
 				PRODUCT_MODULE_NAME = AlleeSDK;
 				PRODUCT_NAME = AlleeSDK;

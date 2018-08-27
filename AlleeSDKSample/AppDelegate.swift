@@ -57,7 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static func update(env: Int) {
         AppDelegate.env = env
         
-        UserDefaults.standard.set(kdsStation, forKey: "env")
+        UserDefaults.standard.set(env, forKey: "env")
+        
+        
     }
     
     
