@@ -60,7 +60,7 @@ import BSocketHelper
         self.currentSend.append(CurrentSend(guid: currentGuid, deviceSerial: deviceSerial, callback: callback))
         
         guard let request = SocketSendOrder(guid: currentGuid, order: order,
-                                            deviceSerial: self.deviceSerial).toJson() else {
+                                            deviceSerial: self.deviceSerial).toJson()?.toAES() else {
                                                 
                                                 DispatchQueue.main.async {
                                                     callback("Failed to create request")
@@ -106,12 +106,12 @@ import BSocketHelper
     
     
     public func received(message: String) {
-        let socketMessage = BaseSocketMessage.fromBase(json: message)
+        let socketMessage = BaseSocketMessage.fromBase(json: message.fromAES() ?? "")
         if let type = socketMessage?.type {
             
             switch type {
             case TypeSocketMessage.callback:
-                guard let socketCallback = SocketCallback.from(json: message) else {
+                guard let socketCallback = SocketCallback.from(json:  message.fromAES() ?? "") else {
                     return
                 }
                 

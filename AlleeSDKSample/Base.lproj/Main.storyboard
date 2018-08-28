@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-zY-o73">
-                                <rect key="frame" x="8" y="230" width="359" height="429"/>
+                                <rect key="frame" x="8" y="230" width="359" height="407"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g6G-6t-G2g">
                                     <size key="itemSize" width="50" height="50"/>
@@ -176,22 +176,47 @@
                                     <constraint firstAttribute="height" constant="154" id="woe-CE-xSc"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qO3-LN-uRU">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qfT-7P-XaQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZT8-5l-Drd">
+                                <rect key="frame" x="0.0" y="637" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.79081723640000001" green="0.78699686329999996" blue="0.79463760959999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qGb-N7-Qh2"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="ipz-Du-DML"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WqC-S9-H7S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4CC-Od-uw8"/>
                             <constraint firstAttribute="trailing" secondItem="CQW-zY-o73" secondAttribute="trailing" constant="8" id="GkG-kN-deA"/>
+                            <constraint firstItem="ZT8-5l-Drd" firstAttribute="trailing" secondItem="qO3-LN-uRU" secondAttribute="trailing" id="Jeb-pC-5Lg"/>
+                            <constraint firstItem="qO3-LN-uRU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JmN-gn-TPO"/>
                             <constraint firstItem="CQW-zY-o73" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="KHg-rG-num"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qO3-LN-uRU" secondAttribute="trailing" id="O0A-q1-aJo"/>
+                            <constraint firstItem="ZT8-5l-Drd" firstAttribute="top" secondItem="qO3-LN-uRU" secondAttribute="top" id="Zte-is-wNE"/>
+                            <constraint firstItem="qO3-LN-uRU" firstAttribute="top" secondItem="CQW-zY-o73" secondAttribute="bottom" id="cbc-Is-dMa"/>
                             <constraint firstItem="CQW-zY-o73" firstAttribute="top" secondItem="WqC-S9-H7S" secondAttribute="bottom" constant="12" id="f6p-XU-sGJ"/>
                             <constraint firstItem="WqC-S9-H7S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jGy-UE-JKC"/>
+                            <constraint firstItem="qO3-LN-uRU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mEd-92-IHw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WqC-S9-H7S" secondAttribute="trailing" id="pX2-Av-1bO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CQW-zY-o73" secondAttribute="bottom" constant="8" id="y1G-lW-gr8"/>
+                            <constraint firstItem="ZT8-5l-Drd" firstAttribute="leading" secondItem="qO3-LN-uRU" secondAttribute="leading" id="yLq-MW-IbV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="AlleeSDK Sample" id="BcQ-xN-lpO"/>
                     <connections>
                         <outlet property="lbStatus" destination="ykT-db-mT4" id="MrJ-9d-yMu"/>
+                        <outlet property="lbVersion" destination="qO3-LN-uRU" id="ZLQ-4J-N2c"/>
                         <outlet property="segEnv" destination="nih-Ha-B8d" id="ziA-Yz-XrX"/>
                         <outlet property="tfPort" destination="E47-Q1-wQp" id="NaJ-Vl-G3l"/>
                         <outlet property="tfStation" destination="ivC-ak-HfY" id="egw-ub-r3P"/>

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfStation: UITextField!
     @IBOutlet weak var lbStatus: UILabel!
     @IBOutlet weak var segEnv: UISegmentedControl!
+    @IBOutlet weak var lbVersion: UILabel!
     
     private var layouts = 8
     private var nextOrderId = arc4random_uniform(1000000 - 1) + 1
@@ -37,6 +38,15 @@ class ViewController: UIViewController {
         self.tfStation.delegate = self
         
         self.segEnv.selectedSegmentIndex = AppDelegate.env
+        
+        if let version = Bundle.main.releaseVersionNumber,
+            let build = Bundle.main.buildVersionNumber {
+            
+            self.lbVersion.text = "v\(version) (\(build))"
+            
+        } else {
+            self.lbVersion.text = ""
+        }
     }
     
     
