@@ -10,12 +10,32 @@
 		9E9AC9A38554CD67C3BE4B8E /* Pods_AlleeSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */; };
 		FA17980A2119D05500E4129E /* AlleeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; };
 		FA17980B2119D05500E4129E /* AlleeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FAF035D1210B66FA005528C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D0210B66FA005528C8 /* AppDelegate.swift */; };
-		FAF035D3210B66FA005528C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D2210B66FA005528C8 /* ViewController.swift */; };
-		FAF035D6210B66FA005528C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D4210B66FA005528C8 /* Main.storyboard */; };
-		FAF035D8210B66FA005528C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D7210B66FA005528C8 /* Assets.xcassets */; };
-		FAF035DB210B66FA005528C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D9210B66FA005528C8 /* LaunchScreen.storyboard */; };
+		FAB271A1215D52E70025AAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D0210B66FA005528C8 /* AppDelegate.swift */; };
+		FAB271A2215D52E70025AAD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D2210B66FA005528C8 /* ViewController.swift */; };
+		FAB271A3215D52EC0025AAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D4210B66FA005528C8 /* Main.storyboard */; };
+		FAB271A4215D52EC0025AAD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D7210B66FA005528C8 /* Assets.xcassets */; };
+		FAB271A5215D52EC0025AAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D9210B66FA005528C8 /* LaunchScreen.storyboard */; };
+		FAB271A7215D55BA0025AAD9 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB271A6215D55BA0025AAD9 /* FormViewController.swift */; };
+		FADAEA06215D6193007E581B /* CustomOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEA05215D6193007E581B /* CustomOrder.swift */; };
+		FADAEA0C215D666D007E581B /* JsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEA0B215D666D007E581B /* JsonUtil.swift */; };
+		FADAEA18215D6CA8007E581B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEA17215D6CA8007E581B /* ShareViewController.swift */; };
+		FADAEA1B215D6CA8007E581B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADAEA19215D6CA8007E581B /* MainInterface.storyboard */; };
+		FADAEA1F215D6CA8007E581B /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FADAEA15215D6CA8007E581B /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FADAEA27215D6EC5007E581B /* UserDefaults+Allee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEA26215D6EC5007E581B /* UserDefaults+Allee.swift */; };
+		FADAEA28215D6EC9007E581B /* UserDefaults+Allee.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEA26215D6EC5007E581B /* UserDefaults+Allee.swift */; };
+		FADAEA29215D7000007E581B /* CustomOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEA05215D6193007E581B /* CustomOrder.swift */; };
+		FADAEA2A215D7008007E581B /* JsonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAEA0B215D666D007E581B /* JsonUtil.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FADAEA1D215D6CA8007E581B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAF035C5210B66FA005528C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FADAEA14215D6CA8007E581B;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FA17980C2119D05500E4129E /* Embed Frameworks */ = {
@@ -29,12 +49,33 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FADAEA23215D6CA8007E581B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FADAEA1F215D6CA8007E581B /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB271A6215D55BA0025AAD9 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		FADAEA05215D6193007E581B /* CustomOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOrder.swift; sourceTree = "<group>"; };
+		FADAEA0B215D666D007E581B /* JsonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
+		FADAEA15215D6CA8007E581B /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADAEA17215D6CA8007E581B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FADAEA1A215D6CA8007E581B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FADAEA1C215D6CA8007E581B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADAEA24215D6CCA007E581B /* ShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ShareExtension.entitlements; sourceTree = "<group>"; };
+		FADAEA25215D6CD8007E581B /* AlleeSDKSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlleeSDKSample.entitlements; sourceTree = "<group>"; };
+		FADAEA26215D6EC5007E581B /* UserDefaults+Allee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Allee.swift"; sourceTree = "<group>"; };
 		FAF035CD210B66FA005528C8 /* AlleeSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlleeSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF035D0210B66FA005528C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF035D2210B66FA005528C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +87,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FADAEA12215D6CA8007E581B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAF035CA210B66FA005528C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,10 +124,25 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		FADAEA16215D6CA8007E581B /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FADAEA05215D6193007E581B /* CustomOrder.swift */,
+				FADAEA0B215D666D007E581B /* JsonUtil.swift */,
+				FADAEA24215D6CCA007E581B /* ShareExtension.entitlements */,
+				FADAEA17215D6CA8007E581B /* ShareViewController.swift */,
+				FADAEA19215D6CA8007E581B /* MainInterface.storyboard */,
+				FADAEA1C215D6CA8007E581B /* Info.plist */,
+				FADAEA26215D6EC5007E581B /* UserDefaults+Allee.swift */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
 		FAF035C4210B66FA005528C8 = {
 			isa = PBXGroup;
 			children = (
 				FAF035CF210B66FA005528C8 /* AlleeSDKSample */,
+				FADAEA16215D6CA8007E581B /* ShareExtension */,
 				FAF035CE210B66FA005528C8 /* Products */,
 				FA1798092119D00E00E4129E /* Frameworks */,
 				CA7B72ACD37D92E31A742E44 /* Pods */,
@@ -90,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF035CD210B66FA005528C8 /* AlleeSDKSample.app */,
+				FADAEA15215D6CA8007E581B /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +161,10 @@
 		FAF035CF210B66FA005528C8 /* AlleeSDKSample */ = {
 			isa = PBXGroup;
 			children = (
+				FADAEA25215D6CD8007E581B /* AlleeSDKSample.entitlements */,
 				FAF035D0210B66FA005528C8 /* AppDelegate.swift */,
 				FAF035D2210B66FA005528C8 /* ViewController.swift */,
+				FAB271A6215D55BA0025AAD9 /* FormViewController.swift */,
 				FAF035D4210B66FA005528C8 /* Main.storyboard */,
 				FAF035D7210B66FA005528C8 /* Assets.xcassets */,
 				FAF035D9210B66FA005528C8 /* LaunchScreen.storyboard */,
@@ -110,6 +176,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FADAEA14215D6CA8007E581B /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FADAEA20215D6CA8007E581B /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				FADAEA11215D6CA8007E581B /* Sources */,
+				FADAEA12215D6CA8007E581B /* Frameworks */,
+				FADAEA13215D6CA8007E581B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = FADAEA15215D6CA8007E581B /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FAF035CC210B66FA005528C8 /* AlleeSDKSample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAF035DF210B66FA005528C8 /* Build configuration list for PBXNativeTarget "AlleeSDKSample" */;
@@ -119,11 +202,13 @@
 				FAF035CA210B66FA005528C8 /* Frameworks */,
 				FAF035CB210B66FA005528C8 /* Resources */,
 				FA17980C2119D05500E4129E /* Embed Frameworks */,
-				2779C0288ADB9792408FDA47 /* [CP] Embed Pods Frameworks */,
+				FADAEA23215D6CA8007E581B /* Embed App Extensions */,
+				C71AF9480B9A56C6021DDEF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FADAEA1E215D6CA8007E581B /* PBXTargetDependency */,
 			);
 			name = AlleeSDKSample;
 			productName = AlleeSDKSample;
@@ -136,12 +221,26 @@
 		FAF035C5210B66FA005528C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Bematech;
 				TargetAttributes = {
+					FADAEA14215D6CA8007E581B = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					FAF035CC210B66FA005528C8 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -159,25 +258,52 @@
 			projectRoot = "";
 			targets = (
 				FAF035CC210B66FA005528C8 /* AlleeSDKSample */,
+				FADAEA14215D6CA8007E581B /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FADAEA13215D6CA8007E581B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADAEA1B215D6CA8007E581B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAF035CB210B66FA005528C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF035DB210B66FA005528C8 /* LaunchScreen.storyboard in Resources */,
-				FAF035D8210B66FA005528C8 /* Assets.xcassets in Resources */,
-				FAF035D6210B66FA005528C8 /* Main.storyboard in Resources */,
+				FAB271A3215D52EC0025AAD9 /* Main.storyboard in Resources */,
+				FAB271A4215D52EC0025AAD9 /* Assets.xcassets in Resources */,
+				FAB271A5215D52EC0025AAD9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2779C0288ADB9792408FDA47 /* [CP] Embed Pods Frameworks */ = {
+		353F0987810A13EA29169A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlleeSDKSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C71AF9480B9A56C6021DDEF7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,39 +323,52 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		353F0987810A13EA29169A7E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AlleeSDKSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FADAEA11215D6CA8007E581B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADAEA27215D6EC5007E581B /* UserDefaults+Allee.swift in Sources */,
+				FADAEA2A215D7008007E581B /* JsonUtil.swift in Sources */,
+				FADAEA18215D6CA8007E581B /* ShareViewController.swift in Sources */,
+				FADAEA29215D7000007E581B /* CustomOrder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAF035C9210B66FA005528C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF035D3210B66FA005528C8 /* ViewController.swift in Sources */,
-				FAF035D1210B66FA005528C8 /* AppDelegate.swift in Sources */,
+				FAB271A7215D55BA0025AAD9 /* FormViewController.swift in Sources */,
+				FAB271A1215D52E70025AAD9 /* AppDelegate.swift in Sources */,
+				FAB271A2215D52E70025AAD9 /* ViewController.swift in Sources */,
+				FADAEA06215D6193007E581B /* CustomOrder.swift in Sources */,
+				FADAEA28215D6EC9007E581B /* UserDefaults+Allee.swift in Sources */,
+				FADAEA0C215D666D007E581B /* JsonUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FADAEA1E215D6CA8007E581B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FADAEA14215D6CA8007E581B /* ShareExtension */;
+			targetProxy = FADAEA1D215D6CA8007E581B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		FADAEA19215D6CA8007E581B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FADAEA1A215D6CA8007E581B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		FAF035D4210B66FA005528C8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -249,6 +388,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FADAEA21215D6CA8007E581B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FADAEA22215D6CA8007E581B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FAF035DD210B66FA005528C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -367,7 +551,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlleeSDKSample/AlleeSDKSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -383,7 +569,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -392,7 +578,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AlleeSDKSample/AlleeSDKSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -408,7 +596,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -416,6 +604,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FADAEA20215D6CA8007E581B /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FADAEA21215D6CA8007E581B /* Debug */,
+				FADAEA22215D6CA8007E581B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAF035C8210B66FA005528C8 /* Build configuration list for PBXProject "AlleeSDKSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

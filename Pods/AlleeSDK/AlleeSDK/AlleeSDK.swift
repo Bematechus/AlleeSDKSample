@@ -12,7 +12,9 @@ import BSocketHelper
 
 @objc open class AlleeSDK: NSObject, BSocketHelperDelegate {
 
-    @objc static open let shared = AlleeSDK()
+    @objc static public let shared = AlleeSDK()
+    
+    public typealias Callback = (_ error: String?)->Void
     
     private let deviceSerial = UIDevice.current.identifierForVendor!.uuidString
     private let appId = "com.bematech.allee"
@@ -21,8 +23,11 @@ import BSocketHelper
     private let maxAttempts = 5
     private var currentSend: [CurrentSend] = []
     
+    private var storeKey: String?
     
     @objc open func start(withStoreKey storeKey: String, andPort port: Int=1111, env:Environment=Environment.prod) {
+        self.storeKey = storeKey
+        
         BSocketHelper.shared.start(onPort: port,
                                    withDeviceSerial: self.deviceSerial,
                                    andDeviceHostOrder: nil,
@@ -34,41 +39,24 @@ import BSocketHelper
     }
     
     
-    @objc open func send(order: AlleeOrder, callback: @escaping (_ error: String?)->Void) {
+    @objc open func send(order: AlleeOrder, callback: @escaping Callback) {
         DispatchQueue.global(qos: .background).async {
-            self.send(order: order, callback: callback, attempts: 0)
+            self.send(order: order, orderXML: nil, callback: callback, attempts: 0)
         }
     }
     
     
-    private func send(order: AlleeOrder, callback: @escaping (_ error: String?)->Void, attempts: Int) {
-        let currentGuid = UUID().uuidString
-        guard let device = self.getTargetDevice() else {
-            DispatchQueue.main.async {
-                callback("No Allees available")
-            }
-            return
+    @objc open func send(orderXML: String, callback: @escaping Callback) {
+        DispatchQueue.global(qos: .background).async {
+            self.send(order: nil, orderXML: orderXML, callback: callback, attempts: 0)
         }
+    }
+    
+    
+    private func send(order: AlleeOrder?, orderXML: String?, callback: @escaping Callback, attempts: Int) {
+        guard let request = self.makeRequest(order: order, orderXML: orderXML, callback: callback) else { return }
         
-        guard let deviceSerial = device.serial else {
-            DispatchQueue.main.async {
-                callback("Invalid serial")
-            }
-            return
-        }
-        
-        self.currentSend.append(CurrentSend(guid: currentGuid, deviceSerial: deviceSerial, callback: callback))
-        
-        guard let request = SocketSendOrder(guid: currentGuid, order: order,
-                                            deviceSerial: self.deviceSerial).toJson()?.toAES() else {
-                                                
-                                                DispatchQueue.main.async {
-                                                    callback("Failed to create request")
-                                                }
-                                                return
-        }
-        
-        BSocketHelper.shared.send(msg: request, toDeviceSerial: deviceSerial) { (error) in
+        BSocketHelper.shared.send(msg: request.json, toDeviceSerial: request.deviceSerial) { (error) in
             if let error = error {
                 if attempts > self.maxAttempts {
                     DispatchQueue.main.async {
@@ -77,7 +65,7 @@ import BSocketHelper
                     
                 } else {
                     sleep(1)
-                    self.send(order: order, callback: callback, attempts: attempts + 1)
+                    self.send(order: order, orderXML: orderXML, callback: callback, attempts: attempts + 1)
                 }
             }
         }
@@ -86,7 +74,7 @@ import BSocketHelper
             sleep(self.getDataTimeout)
             
             guard let currenSendIndex = self.currentSend.index(where: { (c2) -> Bool in
-                return c2.guid == currentGuid
+                return c2.guid == request.guid
                 
             }) else {
                 return
@@ -102,6 +90,40 @@ import BSocketHelper
                 callback("TIMEOUT on send to: \(currentSend.deviceSerial)")
             }
         }
+    }
+    
+    
+    private func makeRequest(order: AlleeOrder?, orderXML: String?,
+                             callback: @escaping Callback) -> (guid: String, deviceSerial: String, json: String)? {
+        
+        let currentGuid = UUID().uuidString
+        guard let device = self.getTargetDevice() else {
+            DispatchQueue.main.async {
+                callback("No Allees available")
+            }
+            return nil
+        }
+        
+        guard let toDevice = device.serial else {
+            DispatchQueue.main.async {
+                callback("Invalid serial")
+            }
+            return nil
+        }
+        
+        guard let request = SocketSendOrder(guid: currentGuid, storeKey: self.storeKey ?? "",
+                                            order: order, orderXML: orderXML,
+                                            deviceSerial: self.deviceSerial).toJson()?.toAES() else {
+                                                
+                                                DispatchQueue.main.async {
+                                                    callback("Failed to create request")
+                                                }
+                                                return nil
+        }
+        
+        self.currentSend.append(CurrentSend(guid: currentGuid, deviceSerial: toDevice, callback: callback))
+        
+        return (currentGuid, toDevice, request)
     }
     
     
@@ -160,6 +182,7 @@ import BSocketHelper
     
     
     public func update(storeKey: String) {
+        self.storeKey = storeKey
         BroadcastDiscovery.shared.update(storeKey: storeKey)
     }
     

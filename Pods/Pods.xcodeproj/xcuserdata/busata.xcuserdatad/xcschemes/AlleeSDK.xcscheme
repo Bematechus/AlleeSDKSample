@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CD76FB2B93DE2BE0399D8676C6FA4F52"
+               BlueprintIdentifier = "382581A049F320AA64783965AC73E453"
                BlueprintName = "AlleeSDK"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "AlleeSDK.framework">

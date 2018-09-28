@@ -25,6 +25,7 @@ import Foundation
     
     @objc open var summary: AlleeSummary?
     
+    @objc open var itemRecipe: AlleeItemRecipe?
     
     public override init() {
     }

@@ -20,7 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var env: Int = 0
     
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //This block will show the crash error
+        NSSetUncaughtExceptionHandler { (exception) in
+            print("******************************************************")
+            print("FatalError: \(exception)")
+            for i in exception.callStackSymbols {
+                print("\n\(i)")
+            }
+            print("******************************************************")
+        }
+        
         
         AppDelegate.storeKey = UserDefaults.standard.string(forKey: "storeKey")
         AppDelegate.kdsStation = UserDefaults.standard.string(forKey: "kdsStation")
@@ -86,4 +97,3 @@ extension Bundle {
         return infoDictionary?["CFBundleVersion"] as? String
     }
 }
-

@@ -12,28 +12,32 @@ import BSocketHelper
 class SocketSendOrder: BaseSocketMessage {
     
     var order: AlleeOrder?
+    var orderXML: String?
     
     
-    init(guid: String, order: AlleeOrder, deviceSerial: String) {
-        super.init(guid: guid, type: TypeSocketMessage.sendOrder, originDeviceSerial: deviceSerial)
+    init(guid: String, storeKey: String, order: AlleeOrder?, orderXML: String?, deviceSerial: String) {
+        super.init(guid: guid, storeKey: storeKey, type: TypeSocketMessage.sendOrder, originDeviceSerial: deviceSerial)
         self.order = order
+        self.orderXML = orderXML
     }
     
     
     private enum CodingKeys: String, CodingKey {
-        case order
+        case order, orderXML
     }
     
     
     required init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.order = try container.decode(AlleeOrder.self, forKey: .order)
+        self.order = try container.decode(AlleeOrder?.self, forKey: .order)
+        self.orderXML = try container.decode(String?.self, forKey: .orderXML)
         try super.init(from: decoder)
     }
     
     override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(order, forKey: .order)
+        try container.encode(orderXML, forKey: .orderXML)
         try super.encode(to: encoder)
     }
     
