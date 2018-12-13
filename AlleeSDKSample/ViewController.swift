@@ -8,6 +8,7 @@
 
 import UIKit
 import AlleeSDK
+import FloatingPanel
 
 class ViewController: UIViewController {
     
@@ -17,7 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfStation: UITextField!
     @IBOutlet weak var lbStatus: UILabel!
     @IBOutlet weak var segEnv: UISegmentedControl!
-    @IBOutlet weak var lbVersion: UILabel!
+    
+    private var floatPanel: FloatingPanelController!
     
     private var layouts = 4
     private var customOrders: [CustomOrder] = []
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
     
     private var destination = "DiningIn"
     
+    private var ordersStatusVc: OrdersStatusViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,19 +45,16 @@ class ViewController: UIViewController {
         
         self.segEnv.selectedSegmentIndex = AppDelegate.env
         
-        if let version = Bundle.main.releaseVersionNumber,
-            let build = Bundle.main.buildVersionNumber {
-            
-            self.lbVersion.text = "v\(version) (\(build))"
-            
-        } else {
-            self.lbVersion.text = ""
-        }
-        
         NotificationCenter.default
             .addObserver(forName: UIApplication.didBecomeActiveNotification, object: nil, queue: .main) { _ in
                 self.load()
         }
+        
+        self.collectionView.contentInset = UIEdgeInsets(top: 16, left: 0, bottom: 16, right: 0)
+        
+        AlleeSDK.shared.ordersBumpStatusDelegate = self
+        
+        self.setupPanel()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,6 +62,26 @@ class ViewController: UIViewController {
         
         self.load()
     }
+    
+    private func setupPanel() {
+        if !AppDelegate.isPhone() {
+            return
+        }
+        
+        self.floatPanel = FloatingPanelController()
+        self.ordersStatusVc = self.storyboard!
+            .instantiateViewController(withIdentifier: "OrdersStatusViewController") as? OrdersStatusViewController
+        
+        self.floatPanel.delegate = self
+        self.floatPanel.surfaceView.backgroundColor = .clear
+        self.floatPanel.surfaceView.cornerRadius = 9.0
+        self.floatPanel.surfaceView.shadowHidden = false
+        self.floatPanel.set(contentViewController: self.ordersStatusVc)
+        self.floatPanel.track(scrollView: self.ordersStatusVc.tableView)
+        
+        self.floatPanel.addPanel(toParent: self)
+    }
+    
     
     private func load() {
         self.customOrders = []
@@ -75,6 +95,7 @@ class ViewController: UIViewController {
         
         self.collectionView.reloadData()
     }
+    
     
     private func sendOrder1() {
         let order = self.order(withItems: [
@@ -241,7 +262,14 @@ class ViewController: UIViewController {
     
     private func send(order: AlleeOrder) {
         if self.cantSend() { return }
-        AlleeSDK.shared.send(order: order, callback: self.callback)
+        
+        AlleeSDK.shared.send(order: order) { (error) in
+            if error == nil {
+                self.ordersStatusVc.add(order: order)
+            }
+            
+            self.callback(error: error)
+        }
     }
     
     
@@ -346,8 +374,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource,
-UICollectionViewDelegateFlowLayout {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -386,8 +413,7 @@ UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let isIphone = UIScreen.main.traitCollection.userInterfaceIdiom == .phone
-        return CGSize(width: (collectionView.bounds.width / (isIphone ? 4 : 8)) - 8, height: 100)
+        return CGSize(width: 90, height: 100)
     }
     
     
@@ -406,6 +432,14 @@ UICollectionViewDelegateFlowLayout {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? FormViewController {
             vc.order = sender as? CustomOrder
+            
+        } else if let vc = segue.destination as? OrdersStatusViewController {
+            self.ordersStatusVc = vc
+            
+            vc.view.layer.shadowColor = UIColor.black.cgColor
+            vc.view.layer.shadowOpacity = 0.15
+            vc.view.layer.shadowOffset = .zero
+            vc.view.layer.shadowRadius = 9
         }
     }
     
@@ -431,6 +465,14 @@ UICollectionViewDelegateFlowLayout {
 }
 
 
+extension ViewController: OrdersBumpStatusDelegate {
+    
+    func updated(ordersBumpStatus: [AlleeOrderBumpStatus]) {
+        self.ordersStatusVc.update(ordersStatus: ordersBumpStatus)
+    }
+}
+
+
 extension ViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -449,5 +491,31 @@ extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+}
+
+extension ViewController: FloatingPanelControllerDelegate {
+    
+    func floatingPanel(_ vc: FloatingPanelController, layoutFor newCollection: UITraitCollection) -> FloatingPanelLayout? {
+        return PanelLayout()
+    }
+    
+    class PanelLayout: FloatingPanelLayout {
+        
+        var initialPosition: FloatingPanelPosition {
+            return .tip
+        }
+        
+        public var supportedPositions: Set<FloatingPanelPosition> {
+            return [.full, .tip]
+        }
+        
+        public func insetFor(position: FloatingPanelPosition) -> CGFloat? {
+            switch position {
+            case .full: return 16
+            case .tip: return 100
+            default: return nil
+            }
+        }
     }
 }

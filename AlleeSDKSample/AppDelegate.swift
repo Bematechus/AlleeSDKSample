@@ -8,9 +8,10 @@
 
 import UIKit
 import AlleeSDK
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
     
@@ -32,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("******************************************************")
         }
         
-        
         AppDelegate.storeKey = UserDefaults.standard.string(forKey: "storeKey")
         AppDelegate.kdsStation = UserDefaults.standard.string(forKey: "kdsStation")
         
@@ -45,6 +45,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AlleeSDK.shared.start(withStoreKey: AppDelegate.storeKey ?? "", andPort: AppDelegate.port,
                               env: AlleeSDK.Environment(rawValue: AppDelegate.env)!)
+        
+        let version: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+        let build: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
+        
+        UserDefaults.standard.set("\(version) (\(build))", forKey: "Version")
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
+            if let error = error {
+                print(error)
+            }
+        })
     
         return true
     }
@@ -69,8 +80,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.env = env
         
         UserDefaults.standard.set(env, forKey: "env")
-        
-        
     }
     
     
@@ -85,7 +94,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Failed on change port")
         }
     }
+    
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.alert, .badge, .sound])
+    }
+    
+    
+    private func showNotification(title: String, message: String) {
+        let content = UNMutableNotificationContent()
+        
+        content.title = "Hey this is Simplified iOS"
+        content.body = "We are learning about iOS Local Notification"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().delegate = self
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
+    
+    static func isPhone() -> Bool {
+        return UIDevice.current.userInterfaceIdiom == .phone
+    }
 }
+
 
 extension Bundle {
     

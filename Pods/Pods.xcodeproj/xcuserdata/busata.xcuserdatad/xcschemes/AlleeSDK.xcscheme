@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "382581A049F320AA64783965AC73E453"
+               BlueprintIdentifier = "073E7F1896F4692D34B92044A625B3A6"
                BuildableName = "AlleeSDK.framework"
                BlueprintName = "AlleeSDK"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "382581A049F320AA64783965AC73E453"
+            BlueprintIdentifier = "073E7F1896F4692D34B92044A625B3A6"
             BuildableName = "AlleeSDK.framework"
             BlueprintName = "AlleeSDK"
             ReferencedContainer = "container:Pods.xcodeproj">

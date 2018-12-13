@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E9AC9A38554CD67C3BE4B8E /* Pods_AlleeSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */; };
-		FA17980A2119D05500E4129E /* AlleeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; };
-		FA17980B2119D05500E4129E /* AlleeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FAF035E2210B6D51005528C8 /* AlleeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA0CE2E721C13B6E00C52F68 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA0CE2E621C13B6E00C52F68 /* Settings.bundle */; };
+		FA0CE2E921C13F3500C52F68 /* OrdersStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CE2E821C13F3500C52F68 /* OrdersStatusViewController.swift */; };
 		FAB271A1215D52E70025AAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D0210B66FA005528C8 /* AppDelegate.swift */; };
 		FAB271A2215D52E70025AAD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D2210B66FA005528C8 /* ViewController.swift */; };
 		FAB271A3215D52EC0025AAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF035D4210B66FA005528C8 /* Main.storyboard */; };
@@ -38,17 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FA17980C2119D05500E4129E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				FA17980B2119D05500E4129E /* AlleeSDK.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FADAEA23215D6CA8007E581B /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,12 +49,24 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FADB46BB21C185B50091F1CF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0CE2E621C13B6E00C52F68 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FA0CE2E821C13F3500C52F68 /* OrdersStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersStatusViewController.swift; sourceTree = "<group>"; };
 		FAB271A6215D55BA0025AAD9 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		FADAEA05215D6193007E581B /* CustomOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOrder.swift; sourceTree = "<group>"; };
 		FADAEA0B215D666D007E581B /* JsonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		FAF035D7210B66FA005528C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF035DA210B66FA005528C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF035DC210B66FA005528C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAF035E2210B6D51005528C8 /* AlleeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlleeSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA17980A2119D05500E4129E /* AlleeSDK.framework in Frameworks */,
 				9E9AC9A38554CD67C3BE4B8E /* Pods_AlleeSDKSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +117,6 @@
 		FA1798092119D00E00E4129E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FAF035E2210B6D51005528C8 /* AlleeSDK.framework */,
 				08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */,
 			);
 			path = Frameworks;
@@ -165,10 +163,12 @@
 				FAF035D0210B66FA005528C8 /* AppDelegate.swift */,
 				FAF035D2210B66FA005528C8 /* ViewController.swift */,
 				FAB271A6215D55BA0025AAD9 /* FormViewController.swift */,
+				FA0CE2E821C13F3500C52F68 /* OrdersStatusViewController.swift */,
 				FAF035D4210B66FA005528C8 /* Main.storyboard */,
 				FAF035D7210B66FA005528C8 /* Assets.xcassets */,
 				FAF035D9210B66FA005528C8 /* LaunchScreen.storyboard */,
 				FAF035DC210B66FA005528C8 /* Info.plist */,
+				FA0CE2E621C13B6E00C52F68 /* Settings.bundle */,
 			);
 			path = AlleeSDKSample;
 			sourceTree = "<group>";
@@ -201,9 +201,9 @@
 				FAF035C9210B66FA005528C8 /* Sources */,
 				FAF035CA210B66FA005528C8 /* Frameworks */,
 				FAF035CB210B66FA005528C8 /* Resources */,
-				FA17980C2119D05500E4129E /* Embed Frameworks */,
 				FADAEA23215D6CA8007E581B /* Embed App Extensions */,
 				C71AF9480B9A56C6021DDEF7 /* [CP] Embed Pods Frameworks */,
+				FADB46BB21C185B50091F1CF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0CE2E721C13B6E00C52F68 /* Settings.bundle in Resources */,
 				FAB271A3215D52EC0025AAD9 /* Main.storyboard in Resources */,
 				FAB271A4215D52EC0025AAD9 /* Assets.xcassets in Resources */,
 				FAB271A5215D52EC0025AAD9 /* LaunchScreen.storyboard in Resources */,
@@ -312,11 +313,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample-frameworks.sh",
 				"${PODS_ROOT}/AlleeSDK/Frameworks/BSocketHelper.framework",
 				"${BUILT_PRODUCTS_DIR}/AlleeSDK/AlleeSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSocketHelper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlleeSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FloatingPanel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,6 +349,7 @@
 				FAB271A2215D52E70025AAD9 /* ViewController.swift in Sources */,
 				FADAEA06215D6193007E581B /* CustomOrder.swift in Sources */,
 				FADAEA28215D6EC9007E581B /* UserDefaults+Allee.swift in Sources */,
+				FA0CE2E921C13F3500C52F68 /* OrdersStatusViewController.swift in Sources */,
 				FADAEA0C215D666D007E581B /* JsonUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,6 +564,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/AlleeSDK/Frameworks",
 				);
 				INFOPLIST_FILE = AlleeSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
@@ -587,6 +592,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/AlleeSDK/Frameworks",
 				);
 				INFOPLIST_FILE = AlleeSDKSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11;
