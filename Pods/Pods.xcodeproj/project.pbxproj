@@ -7,88 +7,172 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043DBEB5AFE03A8EE937F2E3286359F6 /* AlleeCondiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D571C1F192F7BF839868ED1F5F8128D /* AlleeCondiment.swift */; };
-		0EDFDB92B57E276C889E705147C79F88 /* AlleeSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF70259CF97BDD8D6C33145CF3B1565 /* AlleeSDK-dummy.m */; };
-		313328191B4CA43CF32EEEB1B37DE313 /* AlleeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA03C7CC2CA5152D25EB64BBE0E1454 /* AlleeSDK.swift */; };
-		52E1F6D130C4DC93F118C9A72C242DB8 /* Pods-AlleeSDKSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AFB9B379B496C3CAB74CBABB498803 /* Pods-AlleeSDKSample-dummy.m */; };
-		5C6E17BFD58A98B1BB81D070905D6F8D /* AlleeTransType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239DCCECD0B2F819C81A2D63021B95F1 /* AlleeTransType.swift */; };
-		628516723CA5C3E26761DE01C2F51EF2 /* AlleeSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C273C21BC7411E1A066832D0DCFB0D6 /* AlleeSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		68E1C5516054D8D8BBD67F3E480444D6 /* Pods-AlleeSDKSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4B7430F4B430244962D4EAD4AAC573 /* Pods-AlleeSDKSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7533AC9AF50895836D49A553F01FFE92 /* AlleeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8883990194FAE1195684FFE9F731929 /* AlleeOrder.swift */; };
-		85ACFE55C7CDEBB098EAA4F7230035C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		9C8D39A03C27251DFE85CD1AEB7D3E54 /* AlleeSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEF6D56D75000448CF3621F6D93A6F0 /* AlleeSummary.swift */; };
-		A22969BD0AC95752225872EDD46EAB22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		ABFC2E51664389B0E75ED4FCF9954246 /* AlleeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193E5649F8EC631634298EA23F8F6FE /* AlleeItem.swift */; };
-		F0BB3B36C6E2D05AAF1CE8568FC8DE50 /* SocketSendOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8748CB92D33A6B4731D9D5C1F0A0C8BB /* SocketSendOrder.swift */; };
-		F98B1F8EB6F824C639B9D744BF735853 /* AlleeItemRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EEC453819679BD6C0F77B58CAC1837 /* AlleeItemRecipe.swift */; };
-		FAF5904E97B842BEA61619AA6F359A59 /* AlleeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 9570FDB0826C235AC75B731B0AF6F5E4 /* AlleeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC953EEAABD31B5F9EB9F9338A7D0385 /* AlleeCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21296FC0AF9D5F1E1CD050505D9540B /* AlleeCustomer.swift */; };
+		0D20DC6DC4162CC9AE7C349BA5843356 /* AlleeSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35F9A06B6251F6436219F4691164D6 /* AlleeSummary.swift */; };
+		1209F38FF7A6AAB7E182FB0086997D1C /* FloatingPanelBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B90B93A4C0FC3E7A6555A4AA725792 /* FloatingPanelBehavior.swift */; };
+		272E09A5CBBBD97038EB22E9DB34CE84 /* SocketOrdersBumpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E401434C7F85FD168CC1945F118B7756 /* SocketOrdersBumpRequest.swift */; };
+		27719E932C1959A28DDFCFAE7600651E /* FloatingPanelSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2556A1F24BDE2963D53EF7D168B844D1 /* FloatingPanelSurfaceView.swift */; };
+		39B3BCB57DDD7EA35FB3EC96B5566FCD /* AlleeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E958B1E55F64127857EB94A1C13946 /* AlleeItem.swift */; };
+		39DBC3CD6A3735158B910CC111091D06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		3DD6BF62F3794A4863D325D05690DA86 /* FloatingPanelBackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DC995E7A8D8E64B4BEB0E18E5516B /* FloatingPanelBackdropView.swift */; };
+		435770F5D11A1AE9FE983912552D8235 /* FloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC0775D6DD8062D4B2C65A14D490E7 /* FloatingPanelController.swift */; };
+		4F993B573D0ECCEB6E5EB5C4A9D112DA /* FloatingPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B0069C746B115333BC676624E8950E5 /* FloatingPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		536F397516682587E16BED5EF6E6E832 /* AlleeCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABCD43A2A590485BF7B8AB6777E1258 /* AlleeCustomer.swift */; };
+		57AC546E73D827745C6D689B1E3A86CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		58CC586155B655CE4FE34EC8F8FE067F /* AlleeOrderBumpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EE86E31443CE4C8AD8DC8F6BD443C /* AlleeOrderBumpStatus.swift */; };
+		60CD6EF1831341AF1175283C363EE199 /* AlleeBumpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A77472D6BBEB7238EE166EE6F755F1D /* AlleeBumpStatus.swift */; };
+		62DA72A4D7F06682342071863CE0E113 /* AlleeCondiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8148517E9CA7058ED10698A6FD090D1A /* AlleeCondiment.swift */; };
+		6E2C1820901D976C31602C2616C388DE /* SocketSendOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D3710BBA272D772A00EB7D7F780898 /* SocketSendOrder.swift */; };
+		7070FD6C46E1F1059CCBBF38BD8E86CF /* AlleeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CF13A921A945001FA22E901CAB993F /* AlleeSDK.swift */; };
+		73BBDCDD294FF603FE2215FFCEA72CA8 /* AlleeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = A41A6E77B199FD230CB9E8A8A5EEF626 /* AlleeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C312B7D453483365A3C8718D3BBBCE6 /* SocketNotifyBump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A22D34E5FA791DBECA57D8DC0C52C7 /* SocketNotifyBump.swift */; };
+		814FC8E0B35A421560A14EF5D7823616 /* OrdersBumpStatusDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB1AE060438AABB45D16C13E7A2102 /* OrdersBumpStatusDelegate.swift */; };
+		81F1BDCEACDD71BBDBFC2F8E76808839 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52C58631F9864CA1AC9EC9FBB765C86 /* Logger.swift */; };
+		833D63D33345A2395DF12504BDE53CC4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */; };
+		8CB7E78424543C2A10839CC1DED21CC6 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5858941B4DA193187CC31668D95BB52 /* UIExtensions.swift */; };
+		92920AB89ED2C1E764E1C2B7A86FF925 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 908E902E026C5C22904CF9014A5604AD /* Foundation.framework */; };
+		947C372BB8BE15FF7333910B3628BE8B /* Pods-AlleeSDKSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4B7430F4B430244962D4EAD4AAC573 /* Pods-AlleeSDKSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B5E5C9911730BFD9BD539394D5A9A7F /* AlleeTransType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC30E92EE4C738E92421C0F7D7F29F /* AlleeTransType.swift */; };
+		9BF1BA2602F0665061559BDF26830A45 /* AlleeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106D534C127F19FAD565A0DA364CD0A6 /* AlleeOrder.swift */; };
+		ACB5DE905FE6B914F1AA473707B75283 /* AlleeItemRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9B741BAF58C124E7A7EE06AD994D5 /* AlleeItemRecipe.swift */; };
+		CD94F9A7BB04CFA832685C5D5A4DBC97 /* FloatingPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C44CF35188637F4A00DB0C310EF7C82 /* FloatingPanel.swift */; };
+		D4D19F0C585541A6DC2E1F489D334036 /* FloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096F8B1FB41DAF44D5068C2AA9474301 /* FloatingPanelLayout.swift */; };
+		D6F3EABC3004B325F9EAA1217B42C8A7 /* GrabberHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3148A09B2053415CC51DE525F5ECC5 /* GrabberHandleView.swift */; };
+		DC4C277E628EB39FF5F21B63BAEF9692 /* AlleeSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F6E6D8851F84BB677DB53EEA03831C /* AlleeSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD5D98D01534B4B84B3327C4A18CF588 /* AlleeSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C58D6349468C5A7F61E30DBF7AFBA9 /* AlleeSDK-dummy.m */; };
+		EBF081DBA8CBAA0CCDFF62757DFD39DF /* SocketOrdersBumpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF285BA21A542AA93173AD7C5EE0335 /* SocketOrdersBumpResponse.swift */; };
+		ECAC5AEFC4B8A70DB437EFA002C69E83 /* Pods-AlleeSDKSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AFB9B379B496C3CAB74CBABB498803 /* Pods-AlleeSDKSample-dummy.m */; };
+		F5C62CED578F17CED1AE7B965CCAAE16 /* FloatingPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F960C0BAD8D6656538466324B506D2A2 /* FloatingPanel-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		74A0B92DDACB7EF0F424379EACEDB173 /* PBXContainerItemProxy */ = {
+		27CEBA50C5B0157560B9CC66D01B4550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 382581A049F320AA64783965AC73E453;
+			remoteGlobalIDString = DFA61B0256358E010210563775D1A18D;
+			remoteInfo = FloatingPanel;
+		};
+		E25439334AD22F5D5E70DCC0EE473BC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 073E7F1896F4692D34B92044A625B3A6;
 			remoteInfo = AlleeSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B8F9DB47D9D2A377C6502D6244ADBF /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DB1AE060438AABB45D16C13E7A2102 /* OrdersBumpStatusDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrdersBumpStatusDelegate.swift; path = AlleeSDK/OrdersBumpStatusDelegate.swift; sourceTree = "<group>"; };
+		096F8B1FB41DAF44D5068C2AA9474301 /* FloatingPanelLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelLayout.swift; path = Framework/Sources/FloatingPanelLayout.swift; sourceTree = "<group>"; };
+		0B0069C746B115333BC676624E8950E5 /* FloatingPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingPanel-umbrella.h"; sourceTree = "<group>"; };
+		0C44CF35188637F4A00DB0C310EF7C82 /* FloatingPanel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanel.swift; path = Framework/Sources/FloatingPanel.swift; sourceTree = "<group>"; };
+		0C4DC995E7A8D8E64B4BEB0E18E5516B /* FloatingPanelBackdropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelBackdropView.swift; path = Framework/Sources/FloatingPanelBackdropView.swift; sourceTree = "<group>"; };
 		0CC40C14C058601F0278B0E58F140C8A /* Pods-AlleeSDKSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlleeSDKSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		239DCCECD0B2F819C81A2D63021B95F1 /* AlleeTransType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeTransType.swift; path = Frameworks/AlleeCommon/Models/AlleeTransType.swift; sourceTree = "<group>"; };
-		24EEC453819679BD6C0F77B58CAC1837 /* AlleeItemRecipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItemRecipe.swift; path = Frameworks/AlleeCommon/Models/AlleeItemRecipe.swift; sourceTree = "<group>"; };
-		2FEF6D56D75000448CF3621F6D93A6F0 /* AlleeSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSummary.swift; path = Frameworks/AlleeCommon/Models/AlleeSummary.swift; sourceTree = "<group>"; };
-		38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C273C21BC7411E1A066832D0DCFB0D6 /* AlleeSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-umbrella.h"; sourceTree = "<group>"; };
+		106D534C127F19FAD565A0DA364CD0A6 /* AlleeOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrder.swift; path = Frameworks/AlleeCommon/Models/AlleeOrder.swift; sourceTree = "<group>"; };
+		17A22D34E5FA791DBECA57D8DC0C52C7 /* SocketNotifyBump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketNotifyBump.swift; path = Frameworks/AlleeCommon/Messages/SocketNotifyBump.swift; sourceTree = "<group>"; };
+		22FC30E92EE4C738E92421C0F7D7F29F /* AlleeTransType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeTransType.swift; path = Frameworks/AlleeCommon/Models/AlleeTransType.swift; sourceTree = "<group>"; };
+		239C8CC0DDFC39B47021484DF6B8E2FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2556A1F24BDE2963D53EF7D168B844D1 /* FloatingPanelSurfaceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelSurfaceView.swift; path = Framework/Sources/FloatingPanelSurfaceView.swift; sourceTree = "<group>"; };
+		27E48FFB3B1F372ACDEE4C83063FB79A /* AlleeSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlleeSDK.xcconfig; sourceTree = "<group>"; };
+		2CF285BA21A542AA93173AD7C5EE0335 /* SocketOrdersBumpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketOrdersBumpResponse.swift; path = Frameworks/AlleeCommon/Messages/SocketOrdersBumpResponse.swift; sourceTree = "<group>"; };
+		35C58D6349468C5A7F61E30DBF7AFBA9 /* AlleeSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlleeSDK-dummy.m"; sourceTree = "<group>"; };
+		3ABCD43A2A590485BF7B8AB6777E1258 /* AlleeCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCustomer.swift; path = Frameworks/AlleeCommon/Models/AlleeCustomer.swift; sourceTree = "<group>"; };
+		4CA9B741BAF58C124E7A7EE06AD994D5 /* AlleeItemRecipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItemRecipe.swift; path = Frameworks/AlleeCommon/Models/AlleeItemRecipe.swift; sourceTree = "<group>"; };
 		528E803FA180095CE2CB7A2102A2C698 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		548F042E29106CCDB4AC6D128CB3D65B /* Pods-AlleeSDKSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlleeSDKSample-frameworks.sh"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		57E958B1E55F64127857EB94A1C13946 /* AlleeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItem.swift; path = Frameworks/AlleeCommon/Models/AlleeItem.swift; sourceTree = "<group>"; };
+		5DAC0775D6DD8062D4B2C65A14D490E7 /* FloatingPanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelController.swift; path = Framework/Sources/FloatingPanelController.swift; sourceTree = "<group>"; };
 		6801683C5C7AEA174E734D320CBE5EC2 /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
-		6D571C1F192F7BF839868ED1F5F8128D /* AlleeCondiment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCondiment.swift; path = Frameworks/AlleeCommon/Models/AlleeCondiment.swift; sourceTree = "<group>"; };
-		7193E5649F8EC631634298EA23F8F6FE /* AlleeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItem.swift; path = Frameworks/AlleeCommon/Models/AlleeItem.swift; sourceTree = "<group>"; };
-		8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8748CB92D33A6B4731D9D5C1F0A0C8BB /* SocketSendOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketSendOrder.swift; path = Frameworks/AlleeCommon/Messages/SocketSendOrder.swift; sourceTree = "<group>"; };
+		6AE5883E0CCABE625E1103A88A2D2A01 /* BSocketHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSocketHelper.framework; path = Frameworks/BSocketHelper.framework; sourceTree = "<group>"; };
+		6B1249BE8BCCA33B307EC2A75BDF2BEB /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A77472D6BBEB7238EE166EE6F755F1D /* AlleeBumpStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeBumpStatus.swift; path = Frameworks/AlleeCommon/Models/AlleeBumpStatus.swift; sourceTree = "<group>"; };
+		7C7EE86E31443CE4C8AD8DC8F6BD443C /* AlleeOrderBumpStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrderBumpStatus.swift; path = Frameworks/AlleeCommon/Models/AlleeOrderBumpStatus.swift; sourceTree = "<group>"; };
+		803E3687F33E1DD96BFC908B6256E3E6 /* AlleeSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-prefix.pch"; sourceTree = "<group>"; };
+		8148517E9CA7058ED10698A6FD090D1A /* AlleeCondiment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCondiment.swift; path = Frameworks/AlleeCommon/Models/AlleeCondiment.swift; sourceTree = "<group>"; };
+		84BC974EF70857A640EB9D66B2826CA2 /* FloatingPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatingPanel.modulemap; sourceTree = "<group>"; };
+		84EF8AAFC9109723AF2270E70B287D03 /* FloatingPanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingPanel.xcconfig; sourceTree = "<group>"; };
 		8A76C5A593FD708482B4B0A966BD3E0A /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
-		8BF70259CF97BDD8D6C33145CF3B1565 /* AlleeSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlleeSDK-dummy.m"; sourceTree = "<group>"; };
-		92377FE6698091481472947FB4C3984F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9570FDB0826C235AC75B731B0AF6F5E4 /* AlleeSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlleeSDK.h; path = AlleeSDK/AlleeSDK.h; sourceTree = "<group>"; };
+		93CF13A921A945001FA22E901CAB993F /* AlleeSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSDK.swift; path = AlleeSDK/AlleeSDK.swift; sourceTree = "<group>"; };
+		A374559F3FF36FD9F75BA021EEA5BE66 /* FloatingPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingPanel-prefix.pch"; sourceTree = "<group>"; };
+		A41A6E77B199FD230CB9E8A8A5EEF626 /* AlleeSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlleeSDK.h; path = AlleeSDK/AlleeSDK.h; sourceTree = "<group>"; };
+		A5858941B4DA193187CC31668D95BB52 /* UIExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIExtensions.swift; path = Framework/Sources/UIExtensions.swift; sourceTree = "<group>"; };
 		ABD4D29A5C5D9AD83D1E5AD80A606F61 /* Pods-AlleeSDKSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AlleeSDKSample.modulemap"; sourceTree = "<group>"; };
-		AE148E79227261DC202B6102648AD7B9 /* AlleeSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-prefix.pch"; sourceTree = "<group>"; };
+		AC3148A09B2053415CC51DE525F5ECC5 /* GrabberHandleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrabberHandleView.swift; path = Framework/Sources/GrabberHandleView.swift; sourceTree = "<group>"; };
+		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BE4B7430F4B430244962D4EAD4AAC573 /* Pods-AlleeSDKSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AlleeSDKSample-umbrella.h"; sourceTree = "<group>"; };
 		BED4DE3C6262C4D3C864F457B33231E2 /* Pods-AlleeSDKSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlleeSDKSample-resources.sh"; sourceTree = "<group>"; };
 		BF29C272247B3DC855F7CE4DC97977F7 /* Pods-AlleeSDKSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AlleeSDKSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C0AFB9B379B496C3CAB74CBABB498803 /* Pods-AlleeSDKSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AlleeSDKSample-dummy.m"; sourceTree = "<group>"; };
-		C56F5C4CBEA00697DFBB55B41AA94624 /* BSocketHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSocketHelper.framework; path = Frameworks/BSocketHelper.framework; sourceTree = "<group>"; };
-		D8883990194FAE1195684FFE9F731929 /* AlleeOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrder.swift; path = Frameworks/AlleeCommon/Models/AlleeOrder.swift; sourceTree = "<group>"; };
-		E94EF9BBA21FE71BD3EFAE8F8D62CF40 /* AlleeSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlleeSDK.modulemap; sourceTree = "<group>"; };
-		F21296FC0AF9D5F1E1CD050505D9540B /* AlleeCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCustomer.swift; path = Frameworks/AlleeCommon/Models/AlleeCustomer.swift; sourceTree = "<group>"; };
-		FDD19DA87571BDE5CA37EA645529D973 /* AlleeSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlleeSDK.xcconfig; sourceTree = "<group>"; };
-		FFA03C7CC2CA5152D25EB64BBE0E1454 /* AlleeSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSDK.swift; path = AlleeSDK/AlleeSDK.swift; sourceTree = "<group>"; };
+		C52C58631F9864CA1AC9EC9FBB765C86 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Framework/Sources/Logger.swift; sourceTree = "<group>"; };
+		CE35F9A06B6251F6436219F4691164D6 /* AlleeSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSummary.swift; path = Frameworks/AlleeCommon/Models/AlleeSummary.swift; sourceTree = "<group>"; };
+		D1B90B93A4C0FC3E7A6555A4AA725792 /* FloatingPanelBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelBehavior.swift; path = Framework/Sources/FloatingPanelBehavior.swift; sourceTree = "<group>"; };
+		D2B861BBDCA10CA2D7B7206B997C8ACF /* FloatingPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FloatingPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54954CC4E65408A4EE31368CD8E84D0 /* AlleeSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlleeSDK.modulemap; sourceTree = "<group>"; };
+		D7D3710BBA272D772A00EB7D7F780898 /* SocketSendOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketSendOrder.swift; path = Frameworks/AlleeCommon/Messages/SocketSendOrder.swift; sourceTree = "<group>"; };
+		E401434C7F85FD168CC1945F118B7756 /* SocketOrdersBumpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketOrdersBumpRequest.swift; path = Frameworks/AlleeCommon/Messages/SocketOrdersBumpRequest.swift; sourceTree = "<group>"; };
+		E8F6E6D8851F84BB677DB53EEA03831C /* AlleeSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-umbrella.h"; sourceTree = "<group>"; };
+		EA243F02887CEE3E9A55DE7A6F255497 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F960C0BAD8D6656538466324B506D2A2 /* FloatingPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatingPanel-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		291384B6C5FEBCB6766FB7697D1D833B /* Frameworks */ = {
+		1887986366029C83159494AC456CA89B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22969BD0AC95752225872EDD46EAB22 /* Foundation.framework in Frameworks */,
+				92920AB89ED2C1E764E1C2B7A86FF925 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8FFBA1F740DEAD2CC2AAF8C7BC993A0 /* Frameworks */ = {
+		2634FA40FAACB3667B7CB27C54334F7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85ACFE55C7CDEBB098EAA4F7230035C4 /* Foundation.framework in Frameworks */,
+				39DBC3CD6A3735158B910CC111091D06 /* Foundation.framework in Frameworks */,
+				833D63D33345A2395DF12504BDE53CC4 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C870F0986BE6D0C9BB6239E79F6E3EA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57AC546E73D827745C6D689B1E3A86CF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CAE070BD97FC2BB9467F67850195F57 /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				0C44CF35188637F4A00DB0C310EF7C82 /* FloatingPanel.swift */,
+				0C4DC995E7A8D8E64B4BEB0E18E5516B /* FloatingPanelBackdropView.swift */,
+				D1B90B93A4C0FC3E7A6555A4AA725792 /* FloatingPanelBehavior.swift */,
+				5DAC0775D6DD8062D4B2C65A14D490E7 /* FloatingPanelController.swift */,
+				096F8B1FB41DAF44D5068C2AA9474301 /* FloatingPanelLayout.swift */,
+				2556A1F24BDE2963D53EF7D168B844D1 /* FloatingPanelSurfaceView.swift */,
+				AC3148A09B2053415CC51DE525F5ECC5 /* GrabberHandleView.swift */,
+				C52C58631F9864CA1AC9EC9FBB765C86 /* Logger.swift */,
+				A5858941B4DA193187CC31668D95BB52 /* UIExtensions.swift */,
+				9D198327861EB7EB3847D7D5CC9DA449 /* Support Files */,
+			);
+			path = FloatingPanel;
+			sourceTree = "<group>";
+		};
+		10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				908E902E026C5C22904CF9014A5604AD /* Foundation.framework */,
+				BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		25677EC19911B8FDB96BE0313E1E9F3B /* Pods-AlleeSDKSample */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,31 +191,23 @@
 			path = "Target Support Files/Pods-AlleeSDKSample";
 			sourceTree = "<group>";
 		};
-		28D08110D7DB41D8674D8BD30005243B /* Frameworks */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C56F5C4CBEA00697DFBB55B41AA94624 /* BSocketHelper.framework */,
+				10DEDCB394BAA0C7FEDEBE330207B074 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		671AEEF61BE69AD9068B7C4A4AE8E534 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		63EBFFFA7CE8A5A03BC087A7ABA4C28E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E94EF9BBA21FE71BD3EFAE8F8D62CF40 /* AlleeSDK.modulemap */,
-				FDD19DA87571BDE5CA37EA645529D973 /* AlleeSDK.xcconfig */,
-				8BF70259CF97BDD8D6C33145CF3B1565 /* AlleeSDK-dummy.m */,
-				AE148E79227261DC202B6102648AD7B9 /* AlleeSDK-prefix.pch */,
-				3C273C21BC7411E1A066832D0DCFB0D6 /* AlleeSDK-umbrella.h */,
-				92377FE6698091481472947FB4C3984F /* Info.plist */,
+				D54954CC4E65408A4EE31368CD8E84D0 /* AlleeSDK.modulemap */,
+				27E48FFB3B1F372ACDEE4C83063FB79A /* AlleeSDK.xcconfig */,
+				35C58D6349468C5A7F61E30DBF7AFBA9 /* AlleeSDK-dummy.m */,
+				803E3687F33E1DD96BFC908B6256E3E6 /* AlleeSDK-prefix.pch */,
+				E8F6E6D8851F84BB677DB53EEA03831C /* AlleeSDK-umbrella.h */,
+				EA243F02887CEE3E9A55DE7A6F255497 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/AlleeSDK";
@@ -141,30 +217,21 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				EF79D3468C8A615553C304126F1BCBFD /* Pods */,
-				CB23F7DD50F6BADAAE2EE573F0FAFA4E /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				C3F32247B73B7BF8E5163378E60C22AA /* Pods */,
+				823A83BD9052C3BE1A48CCA3F6595951 /* Products */,
 				90B92FA8A80CFD356FAD9CF1442CB806 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		90733F50F93C0809562C2F7EFBCC8CF6 /* AlleeSDK */ = {
+		823A83BD9052C3BE1A48CCA3F6595951 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6D571C1F192F7BF839868ED1F5F8128D /* AlleeCondiment.swift */,
-				F21296FC0AF9D5F1E1CD050505D9540B /* AlleeCustomer.swift */,
-				7193E5649F8EC631634298EA23F8F6FE /* AlleeItem.swift */,
-				24EEC453819679BD6C0F77B58CAC1837 /* AlleeItemRecipe.swift */,
-				D8883990194FAE1195684FFE9F731929 /* AlleeOrder.swift */,
-				9570FDB0826C235AC75B731B0AF6F5E4 /* AlleeSDK.h */,
-				FFA03C7CC2CA5152D25EB64BBE0E1454 /* AlleeSDK.swift */,
-				2FEF6D56D75000448CF3621F6D93A6F0 /* AlleeSummary.swift */,
-				239DCCECD0B2F819C81A2D63021B95F1 /* AlleeTransType.swift */,
-				8748CB92D33A6B4731D9D5C1F0A0C8BB /* SocketSendOrder.swift */,
-				28D08110D7DB41D8674D8BD30005243B /* Frameworks */,
-				63EBFFFA7CE8A5A03BC087A7ABA4C28E /* Support Files */,
+				6B1249BE8BCCA33B307EC2A75BDF2BEB /* AlleeSDK.framework */,
+				D2B861BBDCA10CA2D7B7206B997C8ACF /* FloatingPanel.framework */,
+				01B8F9DB47D9D2A377C6502D6244ADBF /* Pods_AlleeSDKSample.framework */,
 			);
-			path = AlleeSDK;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		90B92FA8A80CFD356FAD9CF1442CB806 /* Targets Support Files */ = {
@@ -175,61 +242,100 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		97387C233077B534131FC07451E8D0F0 /* AlleeSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				7A77472D6BBEB7238EE166EE6F755F1D /* AlleeBumpStatus.swift */,
+				8148517E9CA7058ED10698A6FD090D1A /* AlleeCondiment.swift */,
+				3ABCD43A2A590485BF7B8AB6777E1258 /* AlleeCustomer.swift */,
+				57E958B1E55F64127857EB94A1C13946 /* AlleeItem.swift */,
+				4CA9B741BAF58C124E7A7EE06AD994D5 /* AlleeItemRecipe.swift */,
+				106D534C127F19FAD565A0DA364CD0A6 /* AlleeOrder.swift */,
+				7C7EE86E31443CE4C8AD8DC8F6BD443C /* AlleeOrderBumpStatus.swift */,
+				A41A6E77B199FD230CB9E8A8A5EEF626 /* AlleeSDK.h */,
+				93CF13A921A945001FA22E901CAB993F /* AlleeSDK.swift */,
+				CE35F9A06B6251F6436219F4691164D6 /* AlleeSummary.swift */,
+				22FC30E92EE4C738E92421C0F7D7F29F /* AlleeTransType.swift */,
+				04DB1AE060438AABB45D16C13E7A2102 /* OrdersBumpStatusDelegate.swift */,
+				17A22D34E5FA791DBECA57D8DC0C52C7 /* SocketNotifyBump.swift */,
+				E401434C7F85FD168CC1945F118B7756 /* SocketOrdersBumpRequest.swift */,
+				2CF285BA21A542AA93173AD7C5EE0335 /* SocketOrdersBumpResponse.swift */,
+				D7D3710BBA272D772A00EB7D7F780898 /* SocketSendOrder.swift */,
+				F1793041381B8936B25C8B02E121064E /* Frameworks */,
+				671AEEF61BE69AD9068B7C4A4AE8E534 /* Support Files */,
 			);
-			name = Frameworks;
+			path = AlleeSDK;
 			sourceTree = "<group>";
 		};
-		CB23F7DD50F6BADAAE2EE573F0FAFA4E /* Products */ = {
+		9D198327861EB7EB3847D7D5CC9DA449 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */,
-				8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */,
+				84BC974EF70857A640EB9D66B2826CA2 /* FloatingPanel.modulemap */,
+				84EF8AAFC9109723AF2270E70B287D03 /* FloatingPanel.xcconfig */,
+				F960C0BAD8D6656538466324B506D2A2 /* FloatingPanel-dummy.m */,
+				A374559F3FF36FD9F75BA021EEA5BE66 /* FloatingPanel-prefix.pch */,
+				0B0069C746B115333BC676624E8950E5 /* FloatingPanel-umbrella.h */,
+				239C8CC0DDFC39B47021484DF6B8E2FC /* Info.plist */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/FloatingPanel";
 			sourceTree = "<group>";
 		};
-		EF79D3468C8A615553C304126F1BCBFD /* Pods */ = {
+		C3F32247B73B7BF8E5163378E60C22AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				90733F50F93C0809562C2F7EFBCC8CF6 /* AlleeSDK */,
+				97387C233077B534131FC07451E8D0F0 /* AlleeSDK */,
+				0CAE070BD97FC2BB9467F67850195F57 /* FloatingPanel */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1793041381B8936B25C8B02E121064E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AE5883E0CCABE625E1103A88A2D2A01 /* BSocketHelper.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0E5FE88ABA2960911ACD988AE6E1352E /* Headers */ = {
+		5AB6AC47464DAFBCC6AD8C835D440606 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				628516723CA5C3E26761DE01C2F51EF2 /* AlleeSDK-umbrella.h in Headers */,
-				FAF5904E97B842BEA61619AA6F359A59 /* AlleeSDK.h in Headers */,
+				DC4C277E628EB39FF5F21B63BAEF9692 /* AlleeSDK-umbrella.h in Headers */,
+				73BBDCDD294FF603FE2215FFCEA72CA8 /* AlleeSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		973637C399A180D0989BF0E47C6592E9 /* Headers */ = {
+		9193471EB4626409940A988BD5AB6B80 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68E1C5516054D8D8BBD67F3E480444D6 /* Pods-AlleeSDKSample-umbrella.h in Headers */,
+				947C372BB8BE15FF7333910B3628BE8B /* Pods-AlleeSDKSample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E739FEB64F2377A3BB64C591C32606 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F993B573D0ECCEB6E5EB5C4A9D112DA /* FloatingPanel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		382581A049F320AA64783965AC73E453 /* AlleeSDK */ = {
+		073E7F1896F4692D34B92044A625B3A6 /* AlleeSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B46D2F850E322C3657034E4CA494E132 /* Build configuration list for PBXNativeTarget "AlleeSDK" */;
+			buildConfigurationList = B865508921D87BEC195DB8D3D494055B /* Build configuration list for PBXNativeTarget "AlleeSDK" */;
 			buildPhases = (
-				00AD1DF35F19AF589354A3708A1EB60C /* Sources */,
-				291384B6C5FEBCB6766FB7697D1D833B /* Frameworks */,
-				0E5FE88ABA2960911ACD988AE6E1352E /* Headers */,
+				D27CC0D0DAAB1C30B731544541649B39 /* Sources */,
+				1887986366029C83159494AC456CA89B /* Frameworks */,
+				5AB6AC47464DAFBCC6AD8C835D440606 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -237,25 +343,43 @@
 			);
 			name = AlleeSDK;
 			productName = AlleeSDK;
-			productReference = 38A5BDF71A7DF22E39C5362D300EEE05 /* AlleeSDK.framework */;
+			productReference = 6B1249BE8BCCA33B307EC2A75BDF2BEB /* AlleeSDK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6CD4353E2D87D13D5E628FBF5D374BE1 /* Pods-AlleeSDKSample */ = {
+		A03D3F77795F8F3AD0DF5CD660214EA3 /* Pods-AlleeSDKSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7A4888C77C3FD32EA5AA339976C58D67 /* Build configuration list for PBXNativeTarget "Pods-AlleeSDKSample" */;
+			buildConfigurationList = B4455F2101EAE2739488E2596989BCFA /* Build configuration list for PBXNativeTarget "Pods-AlleeSDKSample" */;
 			buildPhases = (
-				D8C9578CEAD47A9D9A5F10D37D1E0721 /* Sources */,
-				D8FFBA1F740DEAD2CC2AAF8C7BC993A0 /* Frameworks */,
-				973637C399A180D0989BF0E47C6592E9 /* Headers */,
+				5CEFC2278A03C72EE9751AED3090DDEA /* Sources */,
+				C870F0986BE6D0C9BB6239E79F6E3EA4 /* Frameworks */,
+				9193471EB4626409940A988BD5AB6B80 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F9A0F44438D55F404AFE5956265F0B38 /* PBXTargetDependency */,
+				9700698AA44A23A43E245C44EABF6A66 /* PBXTargetDependency */,
+				1F8B13B3BF06C9DF4422B2DBFDA58602 /* PBXTargetDependency */,
 			);
 			name = "Pods-AlleeSDKSample";
 			productName = "Pods-AlleeSDKSample";
-			productReference = 8209805121866C4F001029E1EB1637D8 /* Pods_AlleeSDKSample.framework */;
+			productReference = 01B8F9DB47D9D2A377C6502D6244ADBF /* Pods_AlleeSDKSample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFA61B0256358E010210563775D1A18D /* FloatingPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2470A7F53414DE7B011E5A6DCF77D1BB /* Build configuration list for PBXNativeTarget "FloatingPanel" */;
+			buildPhases = (
+				CE3FA8ED98DC972B7152B1CFB3BB86EB /* Sources */,
+				2634FA40FAACB3667B7CB27C54334F7A /* Frameworks */,
+				F6E739FEB64F2377A3BB64C591C32606 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FloatingPanel;
+			productName = FloatingPanel;
+			productReference = D2B861BBDCA10CA2D7B7206B997C8ACF /* FloatingPanel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +389,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -275,90 +399,84 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CB23F7DD50F6BADAAE2EE573F0FAFA4E /* Products */;
+			productRefGroup = 823A83BD9052C3BE1A48CCA3F6595951 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				382581A049F320AA64783965AC73E453 /* AlleeSDK */,
-				6CD4353E2D87D13D5E628FBF5D374BE1 /* Pods-AlleeSDKSample */,
+				073E7F1896F4692D34B92044A625B3A6 /* AlleeSDK */,
+				DFA61B0256358E010210563775D1A18D /* FloatingPanel */,
+				A03D3F77795F8F3AD0DF5CD660214EA3 /* Pods-AlleeSDKSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00AD1DF35F19AF589354A3708A1EB60C /* Sources */ = {
+		5CEFC2278A03C72EE9751AED3090DDEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043DBEB5AFE03A8EE937F2E3286359F6 /* AlleeCondiment.swift in Sources */,
-				FC953EEAABD31B5F9EB9F9338A7D0385 /* AlleeCustomer.swift in Sources */,
-				ABFC2E51664389B0E75ED4FCF9954246 /* AlleeItem.swift in Sources */,
-				F98B1F8EB6F824C639B9D744BF735853 /* AlleeItemRecipe.swift in Sources */,
-				7533AC9AF50895836D49A553F01FFE92 /* AlleeOrder.swift in Sources */,
-				0EDFDB92B57E276C889E705147C79F88 /* AlleeSDK-dummy.m in Sources */,
-				313328191B4CA43CF32EEEB1B37DE313 /* AlleeSDK.swift in Sources */,
-				9C8D39A03C27251DFE85CD1AEB7D3E54 /* AlleeSummary.swift in Sources */,
-				5C6E17BFD58A98B1BB81D070905D6F8D /* AlleeTransType.swift in Sources */,
-				F0BB3B36C6E2D05AAF1CE8568FC8DE50 /* SocketSendOrder.swift in Sources */,
+				ECAC5AEFC4B8A70DB437EFA002C69E83 /* Pods-AlleeSDKSample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8C9578CEAD47A9D9A5F10D37D1E0721 /* Sources */ = {
+		CE3FA8ED98DC972B7152B1CFB3BB86EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52E1F6D130C4DC93F118C9A72C242DB8 /* Pods-AlleeSDKSample-dummy.m in Sources */,
+				F5C62CED578F17CED1AE7B965CCAAE16 /* FloatingPanel-dummy.m in Sources */,
+				CD94F9A7BB04CFA832685C5D5A4DBC97 /* FloatingPanel.swift in Sources */,
+				3DD6BF62F3794A4863D325D05690DA86 /* FloatingPanelBackdropView.swift in Sources */,
+				1209F38FF7A6AAB7E182FB0086997D1C /* FloatingPanelBehavior.swift in Sources */,
+				435770F5D11A1AE9FE983912552D8235 /* FloatingPanelController.swift in Sources */,
+				D4D19F0C585541A6DC2E1F489D334036 /* FloatingPanelLayout.swift in Sources */,
+				27719E932C1959A28DDFCFAE7600651E /* FloatingPanelSurfaceView.swift in Sources */,
+				D6F3EABC3004B325F9EAA1217B42C8A7 /* GrabberHandleView.swift in Sources */,
+				81F1BDCEACDD71BBDBFC2F8E76808839 /* Logger.swift in Sources */,
+				8CB7E78424543C2A10839CC1DED21CC6 /* UIExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D27CC0D0DAAB1C30B731544541649B39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60CD6EF1831341AF1175283C363EE199 /* AlleeBumpStatus.swift in Sources */,
+				62DA72A4D7F06682342071863CE0E113 /* AlleeCondiment.swift in Sources */,
+				536F397516682587E16BED5EF6E6E832 /* AlleeCustomer.swift in Sources */,
+				39B3BCB57DDD7EA35FB3EC96B5566FCD /* AlleeItem.swift in Sources */,
+				ACB5DE905FE6B914F1AA473707B75283 /* AlleeItemRecipe.swift in Sources */,
+				9BF1BA2602F0665061559BDF26830A45 /* AlleeOrder.swift in Sources */,
+				58CC586155B655CE4FE34EC8F8FE067F /* AlleeOrderBumpStatus.swift in Sources */,
+				DD5D98D01534B4B84B3327C4A18CF588 /* AlleeSDK-dummy.m in Sources */,
+				7070FD6C46E1F1059CCBBF38BD8E86CF /* AlleeSDK.swift in Sources */,
+				0D20DC6DC4162CC9AE7C349BA5843356 /* AlleeSummary.swift in Sources */,
+				9B5E5C9911730BFD9BD539394D5A9A7F /* AlleeTransType.swift in Sources */,
+				814FC8E0B35A421560A14EF5D7823616 /* OrdersBumpStatusDelegate.swift in Sources */,
+				7C312B7D453483365A3C8718D3BBBCE6 /* SocketNotifyBump.swift in Sources */,
+				272E09A5CBBBD97038EB22E9DB34CE84 /* SocketOrdersBumpRequest.swift in Sources */,
+				EBF081DBA8CBAA0CCDFF62757DFD39DF /* SocketOrdersBumpResponse.swift in Sources */,
+				6E2C1820901D976C31602C2616C388DE /* SocketSendOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F9A0F44438D55F404AFE5956265F0B38 /* PBXTargetDependency */ = {
+		1F8B13B3BF06C9DF4422B2DBFDA58602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FloatingPanel;
+			target = DFA61B0256358E010210563775D1A18D /* FloatingPanel */;
+			targetProxy = 27CEBA50C5B0157560B9CC66D01B4550 /* PBXContainerItemProxy */;
+		};
+		9700698AA44A23A43E245C44EABF6A66 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AlleeSDK;
-			target = 382581A049F320AA64783965AC73E453 /* AlleeSDK */;
-			targetProxy = 74A0B92DDACB7EF0F424379EACEDB173 /* PBXContainerItemProxy */;
+			target = 073E7F1896F4692D34B92044A625B3A6 /* AlleeSDK */;
+			targetProxy = E25439334AD22F5D5E70DCC0EE473BC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		02DF60A7B74514A15B694849BE422958 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6801683C5C7AEA174E734D320CBE5EC2 /* Pods-AlleeSDKSample.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,7 +536,39 @@
 			};
 			name = Release;
 		};
-		785840A31FE64F2D3AE9049A912A77BB /* Release */ = {
+		0C620E80B7F212DAF2213AB0EB5B10C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27E48FFB3B1F372ACDEE4C83063FB79A /* AlleeSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlleeSDK/AlleeSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
+				PRODUCT_MODULE_NAME = AlleeSDK;
+				PRODUCT_NAME = AlleeSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0DBC888524A102053253C9D8F19131FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A76C5A593FD708482B4B0A966BD3E0A /* Pods-AlleeSDKSample.release.xcconfig */;
 			buildSettings = {
@@ -454,10 +604,12 @@
 			};
 			name = Release;
 		};
-		95C3E9D888B3C8F4BECE48FC14A9430A /* Debug */ = {
+		3777671F3B71CA2A0F94E4ED6728D346 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDD19DA87571BDE5CA37EA645529D973 /* AlleeSDK.xcconfig */;
+			baseConfigurationReference = 6801683C5C7AEA174E734D320CBE5EC2 /* Pods-AlleeSDKSample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -467,24 +619,61 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AlleeSDK/AlleeSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
-				PRODUCT_MODULE_NAME = AlleeSDK;
-				PRODUCT_NAME = AlleeSDK;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		91FC3EE0B38D0950D2D7F80A23C8DDD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84EF8AAFC9109723AF2270E70B287D03 /* FloatingPanel.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FloatingPanel/FloatingPanel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FloatingPanel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FloatingPanel/FloatingPanel.modulemap";
+				PRODUCT_MODULE_NAME = FloatingPanel;
+				PRODUCT_NAME = FloatingPanel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -549,9 +738,9 @@
 			};
 			name = Debug;
 		};
-		A5F09988BB9A39316A6CE2912DE5213C /* Release */ = {
+		A67C150C06A786B18947065F43195CB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDD19DA87571BDE5CA37EA645529D973 /* AlleeSDK.xcconfig */;
+			baseConfigurationReference = 27E48FFB3B1F372ACDEE4C83063FB79A /* AlleeSDK.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -582,9 +771,51 @@
 			};
 			name = Release;
 		};
+		E3A9CDAB7BEAFE0EAC22B9AF98EF76EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84EF8AAFC9109723AF2270E70B287D03 /* FloatingPanel.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FloatingPanel/FloatingPanel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FloatingPanel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FloatingPanel/FloatingPanel.modulemap";
+				PRODUCT_MODULE_NAME = FloatingPanel;
+				PRODUCT_NAME = FloatingPanel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2470A7F53414DE7B011E5A6DCF77D1BB /* Build configuration list for PBXNativeTarget "FloatingPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3A9CDAB7BEAFE0EAC22B9AF98EF76EA /* Debug */,
+				91FC3EE0B38D0950D2D7F80A23C8DDD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -594,20 +825,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7A4888C77C3FD32EA5AA339976C58D67 /* Build configuration list for PBXNativeTarget "Pods-AlleeSDKSample" */ = {
+		B4455F2101EAE2739488E2596989BCFA /* Build configuration list for PBXNativeTarget "Pods-AlleeSDKSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				02DF60A7B74514A15B694849BE422958 /* Debug */,
-				785840A31FE64F2D3AE9049A912A77BB /* Release */,
+				3777671F3B71CA2A0F94E4ED6728D346 /* Debug */,
+				0DBC888524A102053253C9D8F19131FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B46D2F850E322C3657034E4CA494E132 /* Build configuration list for PBXNativeTarget "AlleeSDK" */ = {
+		B865508921D87BEC195DB8D3D494055B /* Build configuration list for PBXNativeTarget "AlleeSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95C3E9D888B3C8F4BECE48FC14A9430A /* Debug */,
-				A5F09988BB9A39316A6CE2912DE5213C /* Release */,
+				0C620E80B7F212DAF2213AB0EB5B10C5 /* Debug */,
+				A67C150C06A786B18947065F43195CB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

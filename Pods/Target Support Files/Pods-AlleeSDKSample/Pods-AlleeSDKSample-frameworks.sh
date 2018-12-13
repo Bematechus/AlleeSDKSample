@@ -145,10 +145,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/AlleeSDK/Frameworks/BSocketHelper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlleeSDK/AlleeSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/AlleeSDK/Frameworks/BSocketHelper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AlleeSDK/AlleeSDK.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

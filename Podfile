@@ -7,4 +7,6 @@ target 'AlleeSDKSample' do
 
   pod 'AlleeSDK'
 
+  pod 'FloatingPanel'
+
 end
