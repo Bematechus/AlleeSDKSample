@@ -51,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         UserDefaults.standard.set("\(version) (\(build))", forKey: "Version")
         
+        UNUserNotificationCenter.current().delegate = self
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in
             if let error = error {
                 print(error)
@@ -103,16 +104,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     
-    private func showNotification(title: String, message: String) {
+    static func showNotification(title: String, message: String) {
         let content = UNMutableNotificationContent()
         
-        content.title = "Hey this is Simplified iOS"
-        content.body = "We are learning about iOS Local Notification"
+        content.title = title
+        content.body = message
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-        let request = UNNotificationRequest(identifier: "SimplifiedIOSNotification", content: content, trigger: trigger)
-        
-        UNUserNotificationCenter.current().delegate = self
+        let request = UNNotificationRequest(identifier: message, content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }

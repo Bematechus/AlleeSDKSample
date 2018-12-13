@@ -41,6 +41,11 @@ class OrdersStatusViewController: UIViewController, UITableViewDataSource, UITab
             } else {
                 self.ordersStatus.append(orderStatus)
             }
+            
+            if let status = self.status(byOrderId: orderStatus.id) {
+                AppDelegate.showNotification(title: "Your order was updated",
+                                             message: "The order #\(orderStatus.id ?? "") was changed to \(status)")
+            }
         }
         
         DispatchQueue.main.async {
@@ -68,7 +73,7 @@ class OrdersStatusViewController: UIViewController, UITableViewDataSource, UITab
         let order = self.orders[indexPath.row]
         cell.titleLb.text = "#\(order.id ?? "")"
         
-        if let status = self.status(byOrder: order) {
+        if let status = self.status(byOrderId: order.id) {
             cell.statusLb.text = status
             cell.statusLb.textColor = UIColor(named: "blue")
             
@@ -81,8 +86,8 @@ class OrdersStatusViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     
-    private func status(byOrder order: AlleeOrder) -> String? {
-        if let status = self.ordersStatus.first(where: {$0.id == order.id})?.status {
+    private func status(byOrderId orderId: String?) -> String? {
+        if let status = self.ordersStatus.first(where: {$0.id == orderId})?.status {
             return status == .new ? "DOING" : status == .prepared ? "PREAPRED" : "DELIVERED"
         }
         
