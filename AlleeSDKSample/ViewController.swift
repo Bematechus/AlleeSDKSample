@@ -113,6 +113,25 @@ class ViewController: UIViewController {
             self.item("Coca-Cola 350ml", qty: 2, condiments: nil)
             ])
         
+        let customer = AlleeCustomer()
+        customer.id = UUID().uuidString
+        customer.name = "Robert"
+        customer.phone = "1111111111"
+        customer.phone2 = "222222222"
+        customer.address = "USA"
+        customer.address2 = "North America"
+        customer.city = "New York City"
+        customer.country = "NY"
+        customer.email = "contact@bematechus.com"
+        customer.webmail = "bematechus.com"
+        customer.zip = "99999"
+        
+        order.customer = customer
+        
+        order.items?[0].preparationTime = 10
+        order.items?[0].condiments?[1].preparationTime = 5
+        order.items?[1].set(itemType: .fire)
+        
         self.send(order: order)
     }
     

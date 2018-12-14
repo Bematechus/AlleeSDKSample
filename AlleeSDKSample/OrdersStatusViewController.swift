@@ -88,7 +88,7 @@ class OrdersStatusViewController: UIViewController, UITableViewDataSource, UITab
     
     private func status(byOrderId orderId: String?) -> String? {
         if let status = self.ordersStatus.first(where: {$0.id == orderId})?.status {
-            return status == .new ? "DOING" : status == .prepared ? "PREAPRED" : "DELIVERED"
+            return status == .new ? "DOING" : status == .prepared ? "PREPARED" : "DELIVERED"
         }
         
         return nil

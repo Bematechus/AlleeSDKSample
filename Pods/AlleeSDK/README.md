@@ -49,6 +49,19 @@ Then we can to create our items, inserting our condiments:
     item.kDSStation = "1" // Target KDS preparation station
     item.quantity = 3
     item.condiments = condiments
+    
+    
+We can also add a item recipe using `AlleeItemRecipe`: 
+
+    let recipe = AlleeItemRecipe()
+    recipe.image = "https://bit.ly/2I9dkxH"
+    recipe.ingredients = ["1/2 medium yellow onion, chopped", "3/4 c. panko bread crumbs", "1 tomato, sliced"]
+    recipe.steps = ["In a food processor, pulse black beans, onion, and garlic until finely chopped.",
+                    "Transfer to a large bowl and combine with egg, 2 tablespoons mayo, and panko.",
+                    "In a large skillet over medium heat, heat oil.", 
+                    "Add patties and cook until golden and warmed through, about 5 minutes per side."]
+                    
+    item.itemRecipe = recipe
         
         
 And to create our order, using the created items:
@@ -66,7 +79,7 @@ We can also add a customer to order, using `AlleeCustomer`. **All customer data 
     customer.phone = "PHONE"
 
     order.customer = customer
-        
+    
         
 Now we need send this order to KDS, to do that we will use the `AlleeSDK.shared`:
 
@@ -128,13 +141,14 @@ Still, if you need to provide more information in your order, please check all o
     var buildCard: String? // A text or a link with steps to prepare the item
     var trainingVideo: String? // A video link with steps to prepare the item
     var preModifier: [String]? // Item custom messages
-    var preparationTime: Double // How long time to prepare this item (in minutes)
+    var preparationTime: NSNumber // How long time to prepare this item (in minutes)
     var quantity: Int = 1 // Item quantity
     var kDSStation: String? // Target KDS preparation station
     var transType: AlleeTransType = .insert // Type of transaction (insert, delete, update)
     var condiments: [AlleeCondiment]? // Item condiments
     var summary: AlleeSummary? // Summary of this item
     var itemRecipe: AlleeItemRecipe? // Recipe of this item
+    var itemType: ItemType = .regular // Item priority (regular, fire)
     
     
 #### AlleeCondiment
@@ -143,6 +157,7 @@ Still, if you need to provide more information in your order, please check all o
     var name: String? // Condiment Name
     var preModifier: [String]? // Condiment custom messages
     var transType: AlleeTransType = .insert // Type of transaction (insert, delete, update)
+    var preparationTime: NSNumber // How long time to prepare this condiment (in minutes)
     
     
 #### AlleeCustomer

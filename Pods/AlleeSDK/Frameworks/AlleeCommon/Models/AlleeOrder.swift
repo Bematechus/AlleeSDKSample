@@ -4,7 +4,7 @@
 //
 //  Created by Rodrigo Busata on 20/07/18.
 //  Copyright © 2018 Bematech. All rights reserved.
-//  Version 1.4
+//  Version 1.5.1 (1)
 //
 
 import Foundation
@@ -21,13 +21,12 @@ import BSocketHelper
     @objc open var phone: String?
     @objc open var orderMessages: [String]?
     
-    @objc open var transType: AlleeTransType = .insert
-    
     var orderType: OrderType = .regular
     
     @objc open var items: [AlleeItem]?
     @objc open var customer: AlleeCustomer?
     
+    @objc open var transType: AlleeTransType = .insert
     
     public override init() {
     }

@@ -14,6 +14,17 @@ import Foundation
     @objc open var name: String?
     @objc open var preModifier: [String]?
     
+    private var preparationTime_: Double?
+    @objc open var preparationTime: NSNumber? {
+        set {
+            self.preparationTime_ = newValue?.doubleValue
+        }
+        
+        get {
+            return NSNumber.init(value: self.preparationTime_ ?? 0)
+        }
+    }
+    
     @objc open var transType: AlleeTransType = .insert
     
     
