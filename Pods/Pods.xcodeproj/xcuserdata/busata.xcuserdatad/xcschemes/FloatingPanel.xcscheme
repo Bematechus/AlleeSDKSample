@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFA61B0256358E010210563775D1A18D"
+               BlueprintIdentifier = "804268A3FEBEDABCFC98C79642CC78E3"
                BuildableName = "FloatingPanel.framework"
                BlueprintName = "FloatingPanel"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DFA61B0256358E010210563775D1A18D"
+            BlueprintIdentifier = "804268A3FEBEDABCFC98C79642CC78E3"
             BuildableName = "FloatingPanel.framework"
             BlueprintName = "FloatingPanel"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -26,8 +26,6 @@ class ViewController: UIViewController {
     
     private var nextOrderId = arc4random_uniform(1000000 - 1) + 1
     
-    private var destination = "DiningIn"
-    
     private var ordersStatusVc: OrdersStatusViewController!
     
     override func viewDidLoad() {
@@ -282,13 +280,7 @@ class ViewController: UIViewController {
     private func send(order: AlleeOrder) {
         if self.cantSend() { return }
         
-        AlleeSDK.shared.send(order: order) { (error) in
-            if error == nil {
-                self.ordersStatusVc.add(order: order)
-            }
-            
-            self.callback(error: error)
-        }
+        AlleeSDK.shared.send(order: order, callback: self.callback)
     }
     
     
@@ -298,6 +290,7 @@ class ViewController: UIViewController {
         let order = self.customOrders[sender!.tag - self.layouts - 1]
         var xml = order.xml.replacingOccurrences(of: CustomOrder.Key.orderId.rawValue, with: "\(self.nextOrderId)")
         xml = xml.replacingOccurrences(of: CustomOrder.Key.stationId.rawValue, with: "\(self.tfStation.text ?? "")")
+        
         AlleeSDK.shared.send(orderXML: xml, callback: self.callback)
         
         self.nextOrderId += 1
@@ -378,9 +371,6 @@ class ViewController: UIViewController {
     private func callback(error: String?) {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         
-        let alert = UIAlertController(title: "Order sent", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        
         if let error = error {
             print(error)
             self.lbStatus.text = error
@@ -388,6 +378,8 @@ class ViewController: UIViewController {
         } else {
             print("SENT")
             self.lbStatus.text = "Order was sent"
+            
+            self.ordersStatusVc.add(orderId: "\(self.nextOrderId - 1)")
         }
     }
 }

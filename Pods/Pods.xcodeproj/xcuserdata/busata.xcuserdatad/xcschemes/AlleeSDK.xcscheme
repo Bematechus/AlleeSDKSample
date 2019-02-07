@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "073E7F1896F4692D34B92044A625B3A6"
+               BlueprintIdentifier = "84EBC191B94FF48ACEBBDDAB0525A95E"
                BuildableName = "AlleeSDK.framework"
                BlueprintName = "AlleeSDK"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "073E7F1896F4692D34B92044A625B3A6"
+            BlueprintIdentifier = "84EBC191B94FF48ACEBBDDAB0525A95E"
             BuildableName = "AlleeSDK.framework"
             BlueprintName = "AlleeSDK"
             ReferencedContainer = "container:Pods.xcodeproj">

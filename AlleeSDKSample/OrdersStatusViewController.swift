@@ -14,7 +14,7 @@ class OrdersStatusViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     @IBOutlet weak var tableView: UITableView!
     
-    var orders: [AlleeOrder] = []
+    var ordersIds: [String] = []
     var ordersStatus: [AlleeOrderBumpStatus] = []
     
     override func viewDidLayoutSubviews() {
@@ -27,8 +27,8 @@ class OrdersStatusViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     
-    func add(order: AlleeOrder) {
-        self.orders.append(order)
+    func add(orderId: String) {
+        self.ordersIds.append(orderId)
         self.tableView.reloadData()
     }
     
@@ -64,16 +64,16 @@ class OrdersStatusViewController: UIViewController, UITableViewDataSource, UITab
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.orders.count
+        return self.ordersIds.count
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! OrderStatusCell
-        let order = self.orders[indexPath.row]
-        cell.titleLb.text = "#\(order.id ?? "")"
+        let orderId = self.ordersIds[indexPath.row]
+        cell.titleLb.text = "#\(orderId)"
         
-        if let status = self.status(byOrderId: order.id) {
+        if let status = self.status(byOrderId: orderId) {
             cell.statusLb.text = status
             cell.statusLb.textColor = UIColor(named: "blue")
             
