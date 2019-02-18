@@ -382,6 +382,11 @@ class ViewController: UIViewController {
             self.ordersStatusVc.add(orderId: "\(self.nextOrderId - 1)")
         }
     }
+    
+    @IBAction func actionToggleKey(_ sender: UIButton) {
+        self.tfStoreKey.isSecureTextEntry.toggle()
+        sender.setTitle(self.tfStoreKey.isSecureTextEntry ? "Show" : "Hide", for: .normal)
+    }
 }
 
 

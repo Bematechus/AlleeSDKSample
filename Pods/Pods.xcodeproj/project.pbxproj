@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -62,11 +62,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C483C7811AEA895ACD77DFBBEAFF344 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C483C7811AEA895ACD77DFBBEAFF344 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AlleeSDKSample.framework; path = "Pods-AlleeSDKSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF7DF99E8BFD02C86EE2ED935B4473E /* SocketNotifyBump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketNotifyBump.swift; path = Frameworks/AlleeCommon/Messages/SocketNotifyBump.swift; sourceTree = "<group>"; };
 		128342879DF632C252FC2E475827A17E /* FloatingPanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelController.swift; path = Framework/Sources/FloatingPanelController.swift; sourceTree = "<group>"; };
 		1D6A4A1482376753C991D529AAB7E5D4 /* AlleeOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrder.swift; path = Frameworks/AlleeCommon/Models/AlleeOrder.swift; sourceTree = "<group>"; };
-		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		25AF7349B86F4B7C1AC2A9DCFBF29F73 /* SocketOrdersBumpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketOrdersBumpRequest.swift; path = Frameworks/AlleeCommon/Messages/SocketOrdersBumpRequest.swift; sourceTree = "<group>"; };
 		27F586DD1CE1FE7E2F8D37C7B86EF9F0 /* FloatingPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatingPanel-dummy.m"; sourceTree = "<group>"; };
 		2DDECCC6AFBF8433A81034B796A33DC1 /* AlleeSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlleeSDK.h; path = AlleeSDK/AlleeSDK.h; sourceTree = "<group>"; };
@@ -85,14 +85,14 @@
 		6E56742055058F89A8261A521325DA38 /* SocketSendOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketSendOrder.swift; path = Frameworks/AlleeCommon/Messages/SocketSendOrder.swift; sourceTree = "<group>"; };
 		72B01F40A887C248067AD719131BB36D /* Pods-AlleeSDKSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AlleeSDKSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		77F8EECFA43B16446E068E4D8AB3AE32 /* AlleeSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSDK.swift; path = AlleeSDK/AlleeSDK.swift; sourceTree = "<group>"; };
-		790A54C697890772D3AE409A9C7284B4 /* FloatingPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FloatingPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		790A54C697890772D3AE409A9C7284B4 /* FloatingPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FloatingPanel.framework; path = FloatingPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D097134B3F7FF5C92A83B298DDEA996 /* Pods-AlleeSDKSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlleeSDKSample-resources.sh"; sourceTree = "<group>"; };
 		925F4281168C09F575EEC4A1237F5E9C /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		95F2B84D085DE7F8CFAAFDF304728C87 /* AlleeOrderBumpStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrderBumpStatus.swift; path = Frameworks/AlleeCommon/Models/AlleeOrderBumpStatus.swift; sourceTree = "<group>"; };
 		99BB21D18A7418DE768957EB1096EE24 /* Pods-AlleeSDKSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlleeSDKSample-frameworks.sh"; sourceTree = "<group>"; };
 		A0D922F06FA20007676FABCE05F5C159 /* FloatingPanelSurfaceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelSurfaceView.swift; path = Framework/Sources/FloatingPanelSurfaceView.swift; sourceTree = "<group>"; };
 		A6A37764F0E9EF5E96A357B5052988FF /* Pods-AlleeSDKSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AlleeSDKSample-umbrella.h"; sourceTree = "<group>"; };
-		B5555FF1317783227D23B801C4F34D7F /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5555FF1317783227D23B801C4F34D7F /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlleeSDK.framework; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D860CA72AD5FEC33EBA55CC7602262 /* AlleeCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCustomer.swift; path = Frameworks/AlleeCommon/Models/AlleeCustomer.swift; sourceTree = "<group>"; };
 		B988FF28E25BA5527436EDA7733EB5BB /* AlleeSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlleeSDK-dummy.m"; sourceTree = "<group>"; };
 		BC18A41915A066F5DB58473C63A54070 /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +161,7 @@
 				DFD467A761EC13DB5EB7264E18C381EE /* UIExtensions.swift */,
 				0C4E7EB7E8EFD8727047B10A7EAAEC44 /* Support Files */,
 			);
+			name = FloatingPanel;
 			path = FloatingPanel;
 			sourceTree = "<group>";
 		};
@@ -208,6 +209,7 @@
 				42619EBB63E98CD046E9FFD5FAE67504 /* Frameworks */,
 				93A329E0276DA6494C752D315190528B /* Support Files */,
 			);
+			name = AlleeSDK;
 			path = AlleeSDK;
 			sourceTree = "<group>";
 		};
@@ -392,7 +394,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -521,7 +523,11 @@
 				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
 				PRODUCT_MODULE_NAME = AlleeSDK;
 				PRODUCT_NAME = AlleeSDK;
@@ -619,14 +625,17 @@
 				INFOPLIST_FILE = "Target Support Files/FloatingPanel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FloatingPanel/FloatingPanel.modulemap";
 				PRODUCT_MODULE_NAME = FloatingPanel;
 				PRODUCT_NAME = FloatingPanel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -652,7 +661,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
 				OTHER_LDFLAGS = "";
@@ -685,7 +698,11 @@
 				INFOPLIST_FILE = "Target Support Files/AlleeSDK/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
 				PRODUCT_MODULE_NAME = AlleeSDK;
 				PRODUCT_NAME = AlleeSDK;
@@ -718,14 +735,17 @@
 				INFOPLIST_FILE = "Target Support Files/FloatingPanel/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULEMAP_FILE = "Target Support Files/FloatingPanel/FloatingPanel.modulemap";
 				PRODUCT_MODULE_NAME = FloatingPanel;
 				PRODUCT_NAME = FloatingPanel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -789,7 +809,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -813,7 +834,11 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-AlleeSDKSample/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.modulemap";
 				OTHER_LDFLAGS = "";

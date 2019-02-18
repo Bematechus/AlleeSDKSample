@@ -98,7 +98,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ivC-ak-HfY">
                                         <rect key="frame" x="938" y="72" width="70" height="40"/>
@@ -156,6 +156,13 @@
                                             <action selector="changeEnv:" destination="BYZ-38-t0r" eventType="valueChanged" id="5FH-Qe-tNG"/>
                                         </connections>
                                     </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6H-XQ-sJN">
+                                        <rect key="frame" x="798" y="77" width="38" height="30"/>
+                                        <state key="normal" title="Show"/>
+                                        <connections>
+                                            <action selector="actionToggleKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cez-pv-JdU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -172,9 +179,11 @@
                                     <constraint firstItem="rcq-Vn-VWl" firstAttribute="leading" secondItem="WqC-S9-H7S" secondAttribute="leading" multiplier="0.5" id="KfG-Ym-c8f"/>
                                     <constraint firstAttribute="trailing" secondItem="rcq-Vn-VWl" secondAttribute="trailing" id="NlR-oP-ffO"/>
                                     <constraint firstItem="ivC-ak-HfY" firstAttribute="leading" secondItem="E47-Q1-wQp" secondAttribute="trailing" constant="12" id="P0k-Q3-7Ge"/>
+                                    <constraint firstItem="l6H-XQ-sJN" firstAttribute="centerY" secondItem="fmx-s5-zzY" secondAttribute="centerY" id="UIv-31-aJr"/>
                                     <constraint firstItem="nih-Ha-B8d" firstAttribute="top" secondItem="WqC-S9-H7S" secondAttribute="top" constant="8" id="UKB-Ud-5VA"/>
                                     <constraint firstItem="nih-Ha-B8d" firstAttribute="centerX" secondItem="WqC-S9-H7S" secondAttribute="centerX" id="Vjm-Th-zsf"/>
                                     <constraint firstItem="ivC-ak-HfY" firstAttribute="bottom" secondItem="fmx-s5-zzY" secondAttribute="bottom" id="Wah-81-fXQ"/>
+                                    <constraint firstItem="l6H-XQ-sJN" firstAttribute="trailing" secondItem="fmx-s5-zzY" secondAttribute="trailing" constant="-8" id="Wyz-vu-t4F"/>
                                     <constraint firstAttribute="trailing" secondItem="Sjq-B0-hce" secondAttribute="trailing" constant="4" id="XoQ-Tr-S97"/>
                                     <constraint firstItem="ivC-ak-HfY" firstAttribute="top" secondItem="fmx-s5-zzY" secondAttribute="top" id="cSf-RN-QKv"/>
                                     <constraint firstItem="fmx-s5-zzY" firstAttribute="leading" secondItem="WqC-S9-H7S" secondAttribute="leading" constant="16" id="fnE-r6-TNg"/>

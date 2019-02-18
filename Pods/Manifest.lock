@@ -1,5 +1,5 @@
 PODS:
-  - AlleeSDK (1.5.2)
+  - AlleeSDK (1.5.3)
   - FloatingPanel (1.2.3)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - FloatingPanel
 
 SPEC CHECKSUMS:
-  AlleeSDK: 9e6624794bf7c25d1c9c1e20f3b2eecc2c1d1a6d
+  AlleeSDK: 58efd8524cb0c4a5b31a5d7a0d136ef4cad8bf64
   FloatingPanel: 3b3521b931b58ade0572837ec81c8c7dc638325d
 
 PODFILE CHECKSUM: 3e1e2341141d790a603bce0f100c8790a8de2b30
