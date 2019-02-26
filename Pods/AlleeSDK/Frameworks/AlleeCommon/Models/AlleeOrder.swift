@@ -8,7 +8,11 @@
 //
 
 import Foundation
+#if os(tvOS)
+import BSocketHelper_tvOS
+#else
 import BSocketHelper
+#endif
 
 @objc open class AlleeOrder: NSObject, Codable {
     

@@ -130,6 +130,8 @@ class ViewController: UIViewController {
         order.items?[0].condiments?[1].preparationTime = 5
         order.items?[1].set(itemType: .fire)
         
+        order.items?[0].category = "Burger"
+        
         self.send(order: order)
     }
     

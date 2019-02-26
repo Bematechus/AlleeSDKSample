@@ -17,6 +17,7 @@ import Foundation
     @objc open var preModifier: [String]?
     @objc open var quantity: Int = 1
     @objc open var kDSStation: String?
+    @objc open var category: String?
     
     @objc open var condiments: [AlleeCondiment]?
     
