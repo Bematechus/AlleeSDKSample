@@ -4,4 +4,5 @@ AlleeSDKSample.xcworkspace/xcuserdata
 AlleeSDKSample.xcodeproj/xcuserdata
 AlleeSDK/
 !Pods/AlleeSDK/
+!Pods/AlleeSDK/AlleeSDK
 Pods/Pods.xcodeproj/xcuserdata
