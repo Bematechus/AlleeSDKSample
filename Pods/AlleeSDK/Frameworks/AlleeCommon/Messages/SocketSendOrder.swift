@@ -19,8 +19,8 @@ class SocketSendOrder: BaseSocketMessage {
     var orderXML: String?
     
     
-    init(guid: String, storeKey: String, order: AlleeOrder?, orderXML: String?, deviceSerial: String) {
-        super.init(guid: guid, storeKey: storeKey, type: TypeSocketMessage.sendOrder, originDeviceSerial: deviceSerial)
+    init(guid: String, storeKey: String, deviceKey: String, order: AlleeOrder?, orderXML: String?, deviceSerial: String) {
+        super.init(guid: guid, storeKey: storeKey, deviceKey: deviceKey, type: TypeSocketMessage.sendOrder, originDeviceSerial: deviceSerial)
         self.order = order
         self.orderXML = orderXML
     }

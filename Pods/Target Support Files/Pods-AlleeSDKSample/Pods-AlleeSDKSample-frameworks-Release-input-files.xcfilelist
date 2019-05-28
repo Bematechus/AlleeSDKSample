@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample-frameworks.sh
+${PODS_ROOT}/AlleeSDK/Frameworks/BSocketHelper.framework
+${BUILT_PRODUCTS_DIR}/AlleeSDK/AlleeSDK.framework
+${BUILT_PRODUCTS_DIR}/FloatingPanel/FloatingPanel.framework

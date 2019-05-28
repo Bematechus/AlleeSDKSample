@@ -15,8 +15,8 @@ import BSocketHelper
 
 class SocketNotifyBump: BaseSocketMessage {
     
-    init(guid: String, storeKey: String, deviceSerial: String) {
-        super.init(guid: guid, storeKey: storeKey, type: TypeSocketMessage.notifyBump, originDeviceSerial: deviceSerial)
+    init(guid: String, storeKey: String, deviceKey: String, deviceSerial: String) {
+        super.init(guid: guid, storeKey: storeKey, deviceKey: deviceKey, type: TypeSocketMessage.notifyBump, originDeviceSerial: deviceSerial)
     }
     
     required init(from decoder: Decoder) throws {
