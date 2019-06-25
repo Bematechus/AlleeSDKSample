@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  AlleeSDKSample
 //
-//  Created by Rodrigo Busata on 27/07/18.
+//  Created by Rodrigo Busata on 07/27/18.
 //  Copyright © 2018 Bematech. All rights reserved.
 //
 
