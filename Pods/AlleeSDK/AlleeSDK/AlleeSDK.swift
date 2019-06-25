@@ -10,7 +10,7 @@ import Foundation
 import BSocketHelper
 
 
-@objc open class AlleeSDK: NSObject, BSocketHelperDelegate {
+@objc open class AlleeSDK: NSObject, PrivateBSocketHelperDelegate {
 
     @objc static public let shared = AlleeSDK()
     
@@ -76,7 +76,7 @@ import BSocketHelper
         DispatchQueue.global(qos: .background).async {
             sleep(self.getDataTimeout)
             
-            guard let currenSendIndex = self.currentSend.index(where: { (c2) -> Bool in
+            guard let currenSendIndex = self.currentSend.firstIndex(where: { (c2) -> Bool in
                 return c2.guid == request.guid
                 
             }) else {
@@ -114,14 +114,15 @@ import BSocketHelper
             return nil
         }
         
-        guard let request = SocketSendOrder(guid: currentGuid, storeKey: self.storeKey ?? "",
+        guard let request = SocketSendOrder(guid: currentGuid, storeKey: self.storeKey ?? "", deviceKey: "",
                                             order: order, orderXML: orderXML,
                                             deviceSerial: self.deviceSerial).toJson() else {
                                                 
-                                                DispatchQueue.main.async {
-                                                    callback("Failed to create request")
-                                                }
-                                                return nil
+            DispatchQueue.main.async {
+                callback("Failed to create request")
+            }
+            
+            return nil
         }
         
         self.currentSend.append(CurrentSend(guid: currentGuid, deviceSerial: toDeviceSerial, callback: callback))
@@ -155,7 +156,7 @@ import BSocketHelper
             return
         }
         
-        guard let currenSendIndex = self.currentSend.index(where: { (c2) -> Bool in
+        guard let currenSendIndex = self.currentSend.firstIndex(where: { (c2) -> Bool in
             return c2.guid == socketCallback.guid
             
         }) else {
@@ -211,7 +212,7 @@ import BSocketHelper
     
     
     private func requestOrdersStatus(guid: String, toDeviceSerial: String) {
-        let request = SocketOrdersBumpRequest(guid: guid, storeKey: self.storeKey ?? "",
+        let request = SocketOrdersBumpRequest(guid: guid, storeKey: self.storeKey ?? "", deviceKey: "",
                                               lastUpdateTime: self.lastUpdateTimeForOrdersStatus(), deviceSerial: self.deviceSerial)
         
         guard let requestJson = request.toJson() else { return }
@@ -288,4 +289,9 @@ import BSocketHelper
             return lhs.guid == rhs.guid
         }
     }
+}
+
+
+private protocol PrivateBSocketHelperDelegate: BSocketHelperDelegate {
+    
 }
