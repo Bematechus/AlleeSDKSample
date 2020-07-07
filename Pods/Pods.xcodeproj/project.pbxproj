@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		071D52F82B602FB85E35CA8583EEF456 /* FloatingPanelSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AF3E70754E5D5B2F4647F9FFB535BA /* FloatingPanelSurfaceView.swift */; };
-		183857D036AD30230F20374B043D3723 /* AlleeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C4600CB41E0573BA9E5D7415CC368 /* AlleeOrder.swift */; };
-		2C000FFD2D40FD9F728E1F83134FDB1B /* FloatingPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C84B947361BE2E39A3FDA4C7B2F339A /* FloatingPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D408305B29250792B2CDDC90990ECAC /* FloatingPanelCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1F7B936555D96EFA5CD1FAA4C30EA2 /* FloatingPanelCore.swift */; };
-		44770B9E9E9B72157A68954E86B6E60A /* AlleeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C3237F9414C3995B535B4EAECD7A3B6F /* AlleeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4EDA15E5BDECEDF1DBF695F8858A9AED /* AlleeSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69213FAEAFAA673543A31F9ABCEE0B72 /* AlleeSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5ED50CC483B882F35204524F504CB12E /* SocketNotifyBump.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EEA07C8763360C5C7CDD75535F2DF1 /* SocketNotifyBump.swift */; };
+		071D52F82B602FB85E35CA8583EEF456 /* FloatingPanelSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D89A04C56C6C7FE08CCF470147F616 /* FloatingPanelSurfaceView.swift */; };
+		183857D036AD30230F20374B043D3723 /* AlleeOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA80EDB6A6FE8CDF94158DE8DE0896E /* AlleeOrder.swift */; };
+		2C000FFD2D40FD9F728E1F83134FDB1B /* FloatingPanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71C56C9821ABB5BE9FE3F282BA0D27BC /* FloatingPanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D408305B29250792B2CDDC90990ECAC /* FloatingPanelCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2651B46D26624F7B98848B424E823990 /* FloatingPanelCore.swift */; };
+		44770B9E9E9B72157A68954E86B6E60A /* AlleeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C65D6200606A090A42C1003671EA8AB /* AlleeSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EDA15E5BDECEDF1DBF695F8858A9AED /* AlleeSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E67F9278686890DEFAA9FA7EB277A201 /* AlleeSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ED50CC483B882F35204524F504CB12E /* SocketNotifyBump.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FF624852A65FAFFF06A967DAC04472 /* SocketNotifyBump.swift */; };
 		5F885AF1E3154577D138FF6634025388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		6458E2FD9C833980F438C83E0996B9B6 /* AlleeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACB2E10455EA1A764F3164D56960D3D /* AlleeSDK.swift */; };
-		685412ACC0672EC98DAEB65BA7D05BAB /* AlleeBumpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122904F1EF0CDF272EC29812A9A527FE /* AlleeBumpStatus.swift */; };
+		6458E2FD9C833980F438C83E0996B9B6 /* AlleeSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE03C74CA58B5A812B0EF756C128465C /* AlleeSDK.swift */; };
+		685412ACC0672EC98DAEB65BA7D05BAB /* AlleeBumpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F50F833C40941446BE1A6F973E4D7 /* AlleeBumpStatus.swift */; };
 		77ED2848D2EC1071CB5E321B8E1BB31C /* Pods-AlleeSDKSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DA93EFA6B0C3553CDEDA3CB223E2C1 /* Pods-AlleeSDKSample-dummy.m */; };
-		79D1465462F50AC4437F74FCF43F2F9B /* AlleeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B389BDF9D626B00C43811A4FC9DA7 /* AlleeItem.swift */; };
-		7B70E124748758E4493E76F4F3B40394 /* SocketOrdersBumpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B22F2B4CFFEF5BC96F5C8EA1F0B242 /* SocketOrdersBumpRequest.swift */; };
-		7FA96F5D3B8F4CE9C95C35D1CD4D6A91 /* FloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C3EBE9EA234A77C15916371053084B /* FloatingPanelController.swift */; };
-		8731F44A2FEB0F3C1F5AC4A0AFCE797A /* AlleeSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CB5F8500162C30C5E3043F1981A099 /* AlleeSDK-dummy.m */; };
-		909F20497713CA83F3637F4519E745EF /* SocketOrdersBumpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED4796F480FEC6A4A9277777324778 /* SocketOrdersBumpResponse.swift */; };
-		970E5351EB7A3C92CD346BCDCC6652A3 /* FloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE987F1456AE8B2A8F951EF2CA135CE9 /* FloatingPanelLayout.swift */; };
-		A04D8B3B3650926C5F7D42B22A67DE7D /* FloatingPanelBackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99FF12DFCA620D7822148F497B1B1F6A /* FloatingPanelBackdropView.swift */; };
-		A3673FD39025DE753731C568DB5E23B9 /* FloatingPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE9D5E1A6D3DE59430DD49060444E0 /* FloatingPanelView.swift */; };
-		A49977EF1D94933CE588A5F237D5DD7C /* GrabberHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE28E16E9AE73829F678C0717DDC2B /* GrabberHandleView.swift */; };
-		A696FE118006841FB09A5E76C11B8978 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD74CD2FC09EF5EE9A3D2EFE20E8FB1 /* Logger.swift */; };
-		A6DB10D310FD18E8B6C25EA33D81DF4E /* FloatingPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64AD94763387242F0A234048751F83B8 /* FloatingPanel-dummy.m */; };
+		79D1465462F50AC4437F74FCF43F2F9B /* AlleeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE00FF9AC30B187CECC8606A7E11AD7 /* AlleeItem.swift */; };
+		7B70E124748758E4493E76F4F3B40394 /* SocketOrdersBumpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4613FB9B7F7407A399FCA74A804F1F93 /* SocketOrdersBumpRequest.swift */; };
+		7FA96F5D3B8F4CE9C95C35D1CD4D6A91 /* FloatingPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A55AD4DD5FE7FCE8A88360B9D1434 /* FloatingPanelController.swift */; };
+		8731F44A2FEB0F3C1F5AC4A0AFCE797A /* AlleeSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D95410988912C0A832F71A406B8B1150 /* AlleeSDK-dummy.m */; };
+		909F20497713CA83F3637F4519E745EF /* SocketOrdersBumpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDE387CBE49A100DAFC2FD64999DF9D /* SocketOrdersBumpResponse.swift */; };
+		970E5351EB7A3C92CD346BCDCC6652A3 /* FloatingPanelLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A574DC44C35257F1C4A09E88EF1891DA /* FloatingPanelLayout.swift */; };
+		A04D8B3B3650926C5F7D42B22A67DE7D /* FloatingPanelBackdropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161B65FB53FDEC4C27D3DE98FCED1A53 /* FloatingPanelBackdropView.swift */; };
+		A3673FD39025DE753731C568DB5E23B9 /* FloatingPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AEF56CF87C0EE01362AA6AC84DDDB3 /* FloatingPanelView.swift */; };
+		A49977EF1D94933CE588A5F237D5DD7C /* GrabberHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1749C69DCD7B56EA4FDBE65E96373B43 /* GrabberHandleView.swift */; };
+		A696FE118006841FB09A5E76C11B8978 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566B1B25CA474069E01D38689B35C4F5 /* Logger.swift */; };
+		A6DB10D310FD18E8B6C25EA33D81DF4E /* FloatingPanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0E8F627BD0129EA4D766B8FBD138 /* FloatingPanel-dummy.m */; };
 		AAE1B9134D32C7B612C5CEAE638F0D9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		B92D3B3044D7835232F747F9F86B5575 /* AlleeSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982268C44CA6D7DF81F1D91392B3EE88 /* AlleeSummary.swift */; };
+		B92D3B3044D7835232F747F9F86B5575 /* AlleeSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1BA67B8232E11FEBB42ADC35F225B /* AlleeSummary.swift */; };
 		C17DD90FDB535CC886156FEA4A17B02C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		CF925E8C4C99A77E1C9FE0049826FCE4 /* FloatingPanelBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680A23B977C72772CC4A84C82C7482F2 /* FloatingPanelBehavior.swift */; };
-		D13AC4B3EDF1F6A5973A039FCE488B92 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87216C38583B8C972C3DEC297FE40B4 /* UIExtensions.swift */; };
-		DC10B4395AA62C31ED8DF03FF4C2CA04 /* AlleeItemRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE7CA681356513625BF186F9BD90643 /* AlleeItemRecipe.swift */; };
-		E5A7F800F2349B7B49C75AEC8A4A87E5 /* SocketSendOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D37F7BC97AA9F32947F6C8FD1157BA0 /* SocketSendOrder.swift */; };
-		E62E543CA9182791942A0DE76D3E6C6C /* FloatingPanelTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B375F025A5815AF7299321F7CA29171A /* FloatingPanelTransitioning.swift */; };
-		E7DF6FF21B6CC4D6AC72A51ECCD6E764 /* AlleeOrderBumpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B7F7E2873C53D333CB32AB0152E02 /* AlleeOrderBumpStatus.swift */; };
-		EA3AE2BCA114A4B7E9F37801B7EF4F73 /* AlleeCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6380514025AA9EB5705D639AE3AA04C /* AlleeCustomer.swift */; };
+		CF925E8C4C99A77E1C9FE0049826FCE4 /* FloatingPanelBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84724360A0C4D99238BDACC4FBF78285 /* FloatingPanelBehavior.swift */; };
+		D13AC4B3EDF1F6A5973A039FCE488B92 /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EF5405F8966E88F553BE7140E1058 /* UIExtensions.swift */; };
+		DC10B4395AA62C31ED8DF03FF4C2CA04 /* AlleeItemRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6122DB0BFF2AFF63E7F311CF812AA131 /* AlleeItemRecipe.swift */; };
+		E5A7F800F2349B7B49C75AEC8A4A87E5 /* SocketSendOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA790321ABD31834F71153C2E17950F6 /* SocketSendOrder.swift */; };
+		E62E543CA9182791942A0DE76D3E6C6C /* FloatingPanelTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CECC9C8B6098B003E34605F16FD10AA /* FloatingPanelTransitioning.swift */; };
+		E7DF6FF21B6CC4D6AC72A51ECCD6E764 /* AlleeOrderBumpStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9129157E3773C9CF07F9E468B821FE01 /* AlleeOrderBumpStatus.swift */; };
+		EA3AE2BCA114A4B7E9F37801B7EF4F73 /* AlleeCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23941C321F6EF9CC9331DBD687060DB5 /* AlleeCustomer.swift */; };
 		EABFAB19CB6D1A45C6DD0431B065FECE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		F61BDAED3EDA75CA10BCB80D09A66805 /* AlleeTransType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19629C01F5BBBACCD191C3F6E0BABB53 /* AlleeTransType.swift */; };
+		F61BDAED3EDA75CA10BCB80D09A66805 /* AlleeTransType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3E3590087B4AC80D8C6F24D223D739 /* AlleeTransType.swift */; };
 		F885141BF88E473D835278480CAFCC43 /* Pods-AlleeSDKSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C714FCFEC05F57FDD9F721162533A0C1 /* Pods-AlleeSDKSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F9668FFDB6AFA0DD29ED7B41E91ACC18 /* AlleeCondiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A858E15A02D4D3CCA3EA53D9F2FFF59A /* AlleeCondiment.swift */; };
-		FF2554AB98FD60AEBF681B9D830957B7 /* OrdersBumpStatusDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F55AEF4104FEBA53B369A98C98F2C29 /* OrdersBumpStatusDelegate.swift */; };
+		F9668FFDB6AFA0DD29ED7B41E91ACC18 /* AlleeCondiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554DF72CF2EA387138A4F4FA411A753B /* AlleeCondiment.swift */; };
+		FF2554AB98FD60AEBF681B9D830957B7 /* OrdersBumpStatusDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFCE4234EDFBE370BD5FBF7449A9421 /* OrdersBumpStatusDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,60 +65,62 @@
 
 /* Begin PBXFileReference section */
 		0BCE8D85A1BDA2A8F9D5FF4A498AC0D3 /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
-		122904F1EF0CDF272EC29812A9A527FE /* AlleeBumpStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeBumpStatus.swift; path = Frameworks/AlleeCommon/Models/AlleeBumpStatus.swift; sourceTree = "<group>"; };
-		19629C01F5BBBACCD191C3F6E0BABB53 /* AlleeTransType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeTransType.swift; path = Frameworks/AlleeCommon/Models/AlleeTransType.swift; sourceTree = "<group>"; };
+		0DFA84EE1E22C121A6B3CD647CDFD4A9 /* AlleeSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlleeSDK.release.xcconfig; sourceTree = "<group>"; };
+		161B65FB53FDEC4C27D3DE98FCED1A53 /* FloatingPanelBackdropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelBackdropView.swift; path = Framework/Sources/FloatingPanelBackdropView.swift; sourceTree = "<group>"; };
+		1749C69DCD7B56EA4FDBE65E96373B43 /* GrabberHandleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrabberHandleView.swift; path = Framework/Sources/GrabberHandleView.swift; sourceTree = "<group>"; };
+		1AA80EDB6A6FE8CDF94158DE8DE0896E /* AlleeOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrder.swift; path = Frameworks/AlleeCommon/Models/AlleeOrder.swift; sourceTree = "<group>"; };
+		1BFCE4234EDFBE370BD5FBF7449A9421 /* OrdersBumpStatusDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrdersBumpStatusDelegate.swift; path = AlleeSDK/OrdersBumpStatusDelegate.swift; sourceTree = "<group>"; };
 		1CB5E81828D82F0F10BED0CE2F8C7C49 /* Pods-AlleeSDKSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlleeSDKSample-acknowledgements.plist"; sourceTree = "<group>"; };
-		25E023EE1E624F38A8D57BDCABDC6466 /* AlleeSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlleeSDK.modulemap; sourceTree = "<group>"; };
+		23941C321F6EF9CC9331DBD687060DB5 /* AlleeCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCustomer.swift; path = Frameworks/AlleeCommon/Models/AlleeCustomer.swift; sourceTree = "<group>"; };
+		2651B46D26624F7B98848B424E823990 /* FloatingPanelCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelCore.swift; path = Framework/Sources/FloatingPanelCore.swift; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		35CE9D5E1A6D3DE59430DD49060444E0 /* FloatingPanelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelView.swift; path = Framework/Sources/FloatingPanelView.swift; sourceTree = "<group>"; };
 		368729ABE6F5B3CF5AB19B26271A2DBC /* Pods-AlleeSDKSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AlleeSDKSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EAE0E8F627BD0129EA4D766B8FBD138 /* FloatingPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatingPanel-dummy.m"; sourceTree = "<group>"; };
+		3F6EF5405F8966E88F553BE7140E1058 /* UIExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIExtensions.swift; path = Framework/Sources/UIExtensions.swift; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		498B7F7E2873C53D333CB32AB0152E02 /* AlleeOrderBumpStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrderBumpStatus.swift; path = Frameworks/AlleeCommon/Models/AlleeOrderBumpStatus.swift; sourceTree = "<group>"; };
-		49DAC0DB5C71FEFFCBF3EE787832652D /* AlleeSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlleeSDK.xcconfig; sourceTree = "<group>"; };
-		4BB49A0C3D8FDB54B09B36159D8FFE5F /* FloatingPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingPanel-prefix.pch"; sourceTree = "<group>"; };
+		4613FB9B7F7407A399FCA74A804F1F93 /* SocketOrdersBumpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketOrdersBumpRequest.swift; path = Frameworks/AlleeCommon/Messages/SocketOrdersBumpRequest.swift; sourceTree = "<group>"; };
+		4A0042BDDBF29ADA2DB1D13B444652D9 /* AlleeSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AlleeSDK.modulemap; sourceTree = "<group>"; };
+		4C65D6200606A090A42C1003671EA8AB /* AlleeSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlleeSDK.h; path = AlleeSDK/AlleeSDK.h; sourceTree = "<group>"; };
 		505D6FB73B5AE5A351F02077F58FE424 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AlleeSDKSample.framework; path = "Pods-AlleeSDKSample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5480D7753D7C6EACAB138CA958650536 /* FloatingPanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatingPanel-Info.plist"; sourceTree = "<group>"; };
-		56B2EACC8867930477C5F60063936510 /* AlleeSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlleeSDK-Info.plist"; sourceTree = "<group>"; };
+		554DF72CF2EA387138A4F4FA411A753B /* AlleeCondiment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCondiment.swift; path = Frameworks/AlleeCommon/Models/AlleeCondiment.swift; sourceTree = "<group>"; };
+		566B1B25CA474069E01D38689B35C4F5 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Framework/Sources/Logger.swift; sourceTree = "<group>"; };
 		596462F0464E10FE74418989C480723C /* Pods-AlleeSDKSample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AlleeSDKSample-Info.plist"; sourceTree = "<group>"; };
-		64AD94763387242F0A234048751F83B8 /* FloatingPanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FloatingPanel-dummy.m"; sourceTree = "<group>"; };
-		680A23B977C72772CC4A84C82C7482F2 /* FloatingPanelBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelBehavior.swift; path = Framework/Sources/FloatingPanelBehavior.swift; sourceTree = "<group>"; };
-		68B22F2B4CFFEF5BC96F5C8EA1F0B242 /* SocketOrdersBumpRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketOrdersBumpRequest.swift; path = Frameworks/AlleeCommon/Messages/SocketOrdersBumpRequest.swift; sourceTree = "<group>"; };
-		69213FAEAFAA673543A31F9ABCEE0B72 /* AlleeSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-umbrella.h"; sourceTree = "<group>"; };
-		6C84B947361BE2E39A3FDA4C7B2F339A /* FloatingPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingPanel-umbrella.h"; sourceTree = "<group>"; };
-		6D02081F2E1CF54948F728DB4B895147 /* BSocketHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSocketHelper.framework; path = Frameworks/BSocketHelper.framework; sourceTree = "<group>"; };
+		6122DB0BFF2AFF63E7F311CF812AA131 /* AlleeItemRecipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItemRecipe.swift; path = Frameworks/AlleeCommon/Models/AlleeItemRecipe.swift; sourceTree = "<group>"; };
+		653D633B4204AE86546E3F419D2AE65F /* FloatingPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingPanel.debug.xcconfig; sourceTree = "<group>"; };
+		67EF0DCDC76D7B7B6B7C862DE25FAAD0 /* AlleeSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-prefix.pch"; sourceTree = "<group>"; };
 		6FAAB7D3DE9B2564509ABD18687E938E /* FloatingPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FloatingPanel.framework; path = FloatingPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7ACB2E10455EA1A764F3164D56960D3D /* AlleeSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSDK.swift; path = AlleeSDK/AlleeSDK.swift; sourceTree = "<group>"; };
-		7B3B389BDF9D626B00C43811A4FC9DA7 /* AlleeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItem.swift; path = Frameworks/AlleeCommon/Models/AlleeItem.swift; sourceTree = "<group>"; };
-		7BD74CD2FC09EF5EE9A3D2EFE20E8FB1 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = Framework/Sources/Logger.swift; sourceTree = "<group>"; };
-		7C0EE7D3AFA5FB9D130466CE136E3FE5 /* FloatingPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatingPanel.modulemap; sourceTree = "<group>"; };
-		7EE7CA681356513625BF186F9BD90643 /* AlleeItemRecipe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItemRecipe.swift; path = Frameworks/AlleeCommon/Models/AlleeItemRecipe.swift; sourceTree = "<group>"; };
-		7F55AEF4104FEBA53B369A98C98F2C29 /* OrdersBumpStatusDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrdersBumpStatusDelegate.swift; path = AlleeSDK/OrdersBumpStatusDelegate.swift; sourceTree = "<group>"; };
-		86CB5F8500162C30C5E3043F1981A099 /* AlleeSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlleeSDK-dummy.m"; sourceTree = "<group>"; };
-		8C1A5CD7385F886663FB42C0E73E9BBE /* AlleeSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-prefix.pch"; sourceTree = "<group>"; };
-		982268C44CA6D7DF81F1D91392B3EE88 /* AlleeSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSummary.swift; path = Frameworks/AlleeCommon/Models/AlleeSummary.swift; sourceTree = "<group>"; };
-		99FF12DFCA620D7822148F497B1B1F6A /* FloatingPanelBackdropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelBackdropView.swift; path = Framework/Sources/FloatingPanelBackdropView.swift; sourceTree = "<group>"; };
-		9D37F7BC97AA9F32947F6C8FD1157BA0 /* SocketSendOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketSendOrder.swift; path = Frameworks/AlleeCommon/Messages/SocketSendOrder.swift; sourceTree = "<group>"; };
+		71C56C9821ABB5BE9FE3F282BA0D27BC /* FloatingPanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingPanel-umbrella.h"; sourceTree = "<group>"; };
+		799149789A53CE913BADAA03B8810FA0 /* AlleeSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AlleeSDK-Info.plist"; sourceTree = "<group>"; };
+		7AE00FF9AC30B187CECC8606A7E11AD7 /* AlleeItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeItem.swift; path = Frameworks/AlleeCommon/Models/AlleeItem.swift; sourceTree = "<group>"; };
+		84724360A0C4D99238BDACC4FBF78285 /* FloatingPanelBehavior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelBehavior.swift; path = Framework/Sources/FloatingPanelBehavior.swift; sourceTree = "<group>"; };
+		8CECC9C8B6098B003E34605F16FD10AA /* FloatingPanelTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelTransitioning.swift; path = Framework/Sources/FloatingPanelTransitioning.swift; sourceTree = "<group>"; };
+		9129157E3773C9CF07F9E468B821FE01 /* AlleeOrderBumpStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrderBumpStatus.swift; path = Frameworks/AlleeCommon/Models/AlleeOrderBumpStatus.swift; sourceTree = "<group>"; };
+		9A0D77B61F9405E2246B8673271FA035 /* FloatingPanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FloatingPanel.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FD31A6FCB132B010A8B8C6C4359AB22 /* BSocketHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSocketHelper.framework; path = Frameworks/BSocketHelper.framework; sourceTree = "<group>"; };
 		A340FCC40C4DB6E5D183E5DD898FC4E1 /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
+		A574DC44C35257F1C4A09E88EF1891DA /* FloatingPanelLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelLayout.swift; path = Framework/Sources/FloatingPanelLayout.swift; sourceTree = "<group>"; };
 		A6DA93EFA6B0C3553CDEDA3CB223E2C1 /* Pods-AlleeSDKSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AlleeSDKSample-dummy.m"; sourceTree = "<group>"; };
 		A750A165EF50D00504F0EB94AADA803F /* Pods-AlleeSDKSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AlleeSDKSample.modulemap"; sourceTree = "<group>"; };
-		A858E15A02D4D3CCA3EA53D9F2FFF59A /* AlleeCondiment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCondiment.swift; path = Frameworks/AlleeCommon/Models/AlleeCondiment.swift; sourceTree = "<group>"; };
-		B375F025A5815AF7299321F7CA29171A /* FloatingPanelTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelTransitioning.swift; path = Framework/Sources/FloatingPanelTransitioning.swift; sourceTree = "<group>"; };
-		C3237F9414C3995B535B4EAECD7A3B6F /* AlleeSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AlleeSDK.h; path = AlleeSDK/AlleeSDK.h; sourceTree = "<group>"; };
-		C4AF3E70754E5D5B2F4647F9FFB535BA /* FloatingPanelSurfaceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelSurfaceView.swift; path = Framework/Sources/FloatingPanelSurfaceView.swift; sourceTree = "<group>"; };
-		C6380514025AA9EB5705D639AE3AA04C /* AlleeCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeCustomer.swift; path = Frameworks/AlleeCommon/Models/AlleeCustomer.swift; sourceTree = "<group>"; };
+		AB3E3590087B4AC80D8C6F24D223D739 /* AlleeTransType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeTransType.swift; path = Frameworks/AlleeCommon/Models/AlleeTransType.swift; sourceTree = "<group>"; };
+		AE03C74CA58B5A812B0EF756C128465C /* AlleeSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSDK.swift; path = AlleeSDK/AlleeSDK.swift; sourceTree = "<group>"; };
+		AE4A55AD4DD5FE7FCE8A88360B9D1434 /* FloatingPanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelController.swift; path = Framework/Sources/FloatingPanelController.swift; sourceTree = "<group>"; };
+		B0AEF56CF87C0EE01362AA6AC84DDDB3 /* FloatingPanelView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelView.swift; path = Framework/Sources/FloatingPanelView.swift; sourceTree = "<group>"; };
+		B0F1BA67B8232E11FEBB42ADC35F225B /* AlleeSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeSummary.swift; path = Frameworks/AlleeCommon/Models/AlleeSummary.swift; sourceTree = "<group>"; };
+		B9D89A04C56C6C7FE08CCF470147F616 /* FloatingPanelSurfaceView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelSurfaceView.swift; path = Framework/Sources/FloatingPanelSurfaceView.swift; sourceTree = "<group>"; };
+		C17C55CEBE47C6DE9291B93220AFA258 /* FloatingPanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FloatingPanel-Info.plist"; sourceTree = "<group>"; };
+		C4FF624852A65FAFFF06A967DAC04472 /* SocketNotifyBump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketNotifyBump.swift; path = Frameworks/AlleeCommon/Messages/SocketNotifyBump.swift; sourceTree = "<group>"; };
 		C714FCFEC05F57FDD9F721162533A0C1 /* Pods-AlleeSDKSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AlleeSDKSample-umbrella.h"; sourceTree = "<group>"; };
-		CC1F7B936555D96EFA5CD1FAA4C30EA2 /* FloatingPanelCore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelCore.swift; path = Framework/Sources/FloatingPanelCore.swift; sourceTree = "<group>"; };
 		D0503CB59C4A282726999CE52EFF26CD /* Pods-AlleeSDKSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AlleeSDKSample-frameworks.sh"; sourceTree = "<group>"; };
-		D2AE28E16E9AE73829F678C0717DDC2B /* GrabberHandleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrabberHandleView.swift; path = Framework/Sources/GrabberHandleView.swift; sourceTree = "<group>"; };
 		D32DACD278A3AED9B5A1428FC73C6493 /* AlleeSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlleeSDK.framework; path = AlleeSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D87216C38583B8C972C3DEC297FE40B4 /* UIExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIExtensions.swift; path = Framework/Sources/UIExtensions.swift; sourceTree = "<group>"; };
-		DCED4796F480FEC6A4A9277777324778 /* SocketOrdersBumpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketOrdersBumpResponse.swift; path = Frameworks/AlleeCommon/Messages/SocketOrdersBumpResponse.swift; sourceTree = "<group>"; };
-		E04902BAFA2976A3AF86264639D06F86 /* FloatingPanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingPanel.xcconfig; sourceTree = "<group>"; };
-		E2C3EBE9EA234A77C15916371053084B /* FloatingPanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelController.swift; path = Framework/Sources/FloatingPanelController.swift; sourceTree = "<group>"; };
-		E66C4600CB41E0573BA9E5D7415CC368 /* AlleeOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeOrder.swift; path = Frameworks/AlleeCommon/Models/AlleeOrder.swift; sourceTree = "<group>"; };
-		E7EEA07C8763360C5C7CDD75535F2DF1 /* SocketNotifyBump.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketNotifyBump.swift; path = Frameworks/AlleeCommon/Messages/SocketNotifyBump.swift; sourceTree = "<group>"; };
-		FE987F1456AE8B2A8F951EF2CA135CE9 /* FloatingPanelLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingPanelLayout.swift; path = Framework/Sources/FloatingPanelLayout.swift; sourceTree = "<group>"; };
+		D592929BB8C597486008B2BEC7B04224 /* FloatingPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FloatingPanel.release.xcconfig; sourceTree = "<group>"; };
+		D95410988912C0A832F71A406B8B1150 /* AlleeSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlleeSDK-dummy.m"; sourceTree = "<group>"; };
+		DAC8E2D4BFAB3CA5C2EF475EF6FD2215 /* FloatingPanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FloatingPanel-prefix.pch"; sourceTree = "<group>"; };
+		DEDE387CBE49A100DAFC2FD64999DF9D /* SocketOrdersBumpResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketOrdersBumpResponse.swift; path = Frameworks/AlleeCommon/Messages/SocketOrdersBumpResponse.swift; sourceTree = "<group>"; };
+		E67F9278686890DEFAA9FA7EB277A201 /* AlleeSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AlleeSDK-umbrella.h"; sourceTree = "<group>"; };
+		E7E38BD68E855D30B9C7A8082EBE17B8 /* AlleeSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AlleeSDK.debug.xcconfig; sourceTree = "<group>"; };
+		FA790321ABD31834F71153C2E17950F6 /* SocketSendOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SocketSendOrder.swift; path = Frameworks/AlleeCommon/Messages/SocketSendOrder.swift; sourceTree = "<group>"; };
+		FF2F50F833C40941446BE1A6F973E4D7 /* AlleeBumpStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlleeBumpStatus.swift; path = Frameworks/AlleeCommon/Models/AlleeBumpStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,12 +152,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0033BB14B12CD321AEB58BA04051E548 /* AlleeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FF2F50F833C40941446BE1A6F973E4D7 /* AlleeBumpStatus.swift */,
+				554DF72CF2EA387138A4F4FA411A753B /* AlleeCondiment.swift */,
+				23941C321F6EF9CC9331DBD687060DB5 /* AlleeCustomer.swift */,
+				7AE00FF9AC30B187CECC8606A7E11AD7 /* AlleeItem.swift */,
+				6122DB0BFF2AFF63E7F311CF812AA131 /* AlleeItemRecipe.swift */,
+				1AA80EDB6A6FE8CDF94158DE8DE0896E /* AlleeOrder.swift */,
+				9129157E3773C9CF07F9E468B821FE01 /* AlleeOrderBumpStatus.swift */,
+				4C65D6200606A090A42C1003671EA8AB /* AlleeSDK.h */,
+				AE03C74CA58B5A812B0EF756C128465C /* AlleeSDK.swift */,
+				B0F1BA67B8232E11FEBB42ADC35F225B /* AlleeSummary.swift */,
+				AB3E3590087B4AC80D8C6F24D223D739 /* AlleeTransType.swift */,
+				1BFCE4234EDFBE370BD5FBF7449A9421 /* OrdersBumpStatusDelegate.swift */,
+				C4FF624852A65FAFFF06A967DAC04472 /* SocketNotifyBump.swift */,
+				4613FB9B7F7407A399FCA74A804F1F93 /* SocketOrdersBumpRequest.swift */,
+				DEDE387CBE49A100DAFC2FD64999DF9D /* SocketOrdersBumpResponse.swift */,
+				FA790321ABD31834F71153C2E17950F6 /* SocketSendOrder.swift */,
+				E2137EE4A7280443E123DE6BBEA70F6B /* Frameworks */,
+				3F1DC79D8F2FEA047F8817393FBFC7DB /* Support Files */,
+			);
+			name = AlleeSDK;
+			path = AlleeSDK;
+			sourceTree = "<group>";
+		};
 		0F5D61193FBC91519EB94A1FAC522D77 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				CB84D07FABD1B049A481F493DBF69DF0 /* Pods-AlleeSDKSample */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		15F5995C7A1A2DB692AC43DD63F84984 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A0D77B61F9405E2246B8673271FA035 /* FloatingPanel.modulemap */,
+				3EAE0E8F627BD0129EA4D766B8FBD138 /* FloatingPanel-dummy.m */,
+				C17C55CEBE47C6DE9291B93220AFA258 /* FloatingPanel-Info.plist */,
+				DAC8E2D4BFAB3CA5C2EF475EF6FD2215 /* FloatingPanel-prefix.pch */,
+				71C56C9821ABB5BE9FE3F282BA0D27BC /* FloatingPanel-umbrella.h */,
+				653D633B4204AE86546E3F419D2AE65F /* FloatingPanel.debug.xcconfig */,
+				D592929BB8C597486008B2BEC7B04224 /* FloatingPanel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FloatingPanel";
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -166,55 +209,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		287285C9923C5A228AFD9D927EEF5BE7 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7C0EE7D3AFA5FB9D130466CE136E3FE5 /* FloatingPanel.modulemap */,
-				E04902BAFA2976A3AF86264639D06F86 /* FloatingPanel.xcconfig */,
-				64AD94763387242F0A234048751F83B8 /* FloatingPanel-dummy.m */,
-				5480D7753D7C6EACAB138CA958650536 /* FloatingPanel-Info.plist */,
-				4BB49A0C3D8FDB54B09B36159D8FFE5F /* FloatingPanel-prefix.pch */,
-				6C84B947361BE2E39A3FDA4C7B2F339A /* FloatingPanel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FloatingPanel";
-			sourceTree = "<group>";
-		};
 		379E0B2E03032E4404F1434844793ABA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9F62CA96384917E5C7A29A5905D7DC7A /* AlleeSDK */,
-				83510E6F03E42740F6911DA65037C05C /* FloatingPanel */,
+				0033BB14B12CD321AEB58BA04051E548 /* AlleeSDK */,
+				CF790833CF15F17575C09B0607B3C39C /* FloatingPanel */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		487C39E3F77E9ED901C48BBA94D6E535 /* Frameworks */ = {
+		3F1DC79D8F2FEA047F8817393FBFC7DB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6D02081F2E1CF54948F728DB4B895147 /* BSocketHelper.framework */,
+				4A0042BDDBF29ADA2DB1D13B444652D9 /* AlleeSDK.modulemap */,
+				D95410988912C0A832F71A406B8B1150 /* AlleeSDK-dummy.m */,
+				799149789A53CE913BADAA03B8810FA0 /* AlleeSDK-Info.plist */,
+				67EF0DCDC76D7B7B6B7C862DE25FAAD0 /* AlleeSDK-prefix.pch */,
+				E67F9278686890DEFAA9FA7EB277A201 /* AlleeSDK-umbrella.h */,
+				E7E38BD68E855D30B9C7A8082EBE17B8 /* AlleeSDK.debug.xcconfig */,
+				0DFA84EE1E22C121A6B3CD647CDFD4A9 /* AlleeSDK.release.xcconfig */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		83510E6F03E42740F6911DA65037C05C /* FloatingPanel */ = {
-			isa = PBXGroup;
-			children = (
-				99FF12DFCA620D7822148F497B1B1F6A /* FloatingPanelBackdropView.swift */,
-				680A23B977C72772CC4A84C82C7482F2 /* FloatingPanelBehavior.swift */,
-				E2C3EBE9EA234A77C15916371053084B /* FloatingPanelController.swift */,
-				CC1F7B936555D96EFA5CD1FAA4C30EA2 /* FloatingPanelCore.swift */,
-				FE987F1456AE8B2A8F951EF2CA135CE9 /* FloatingPanelLayout.swift */,
-				C4AF3E70754E5D5B2F4647F9FFB535BA /* FloatingPanelSurfaceView.swift */,
-				B375F025A5815AF7299321F7CA29171A /* FloatingPanelTransitioning.swift */,
-				35CE9D5E1A6D3DE59430DD49060444E0 /* FloatingPanelView.swift */,
-				D2AE28E16E9AE73829F678C0717DDC2B /* GrabberHandleView.swift */,
-				7BD74CD2FC09EF5EE9A3D2EFE20E8FB1 /* Logger.swift */,
-				D87216C38583B8C972C3DEC297FE40B4 /* UIExtensions.swift */,
-				287285C9923C5A228AFD9D927EEF5BE7 /* Support Files */,
-			);
-			name = FloatingPanel;
-			path = FloatingPanel;
+			name = "Support Files";
+			path = "../Target Support Files/AlleeSDK";
 			sourceTree = "<group>";
 		};
 		98ADAA34DA6A0A3EF0BF51536D44A2CF /* Products */ = {
@@ -225,32 +241,6 @@
 				505D6FB73B5AE5A351F02077F58FE424 /* Pods_AlleeSDKSample.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9F62CA96384917E5C7A29A5905D7DC7A /* AlleeSDK */ = {
-			isa = PBXGroup;
-			children = (
-				122904F1EF0CDF272EC29812A9A527FE /* AlleeBumpStatus.swift */,
-				A858E15A02D4D3CCA3EA53D9F2FFF59A /* AlleeCondiment.swift */,
-				C6380514025AA9EB5705D639AE3AA04C /* AlleeCustomer.swift */,
-				7B3B389BDF9D626B00C43811A4FC9DA7 /* AlleeItem.swift */,
-				7EE7CA681356513625BF186F9BD90643 /* AlleeItemRecipe.swift */,
-				E66C4600CB41E0573BA9E5D7415CC368 /* AlleeOrder.swift */,
-				498B7F7E2873C53D333CB32AB0152E02 /* AlleeOrderBumpStatus.swift */,
-				C3237F9414C3995B535B4EAECD7A3B6F /* AlleeSDK.h */,
-				7ACB2E10455EA1A764F3164D56960D3D /* AlleeSDK.swift */,
-				982268C44CA6D7DF81F1D91392B3EE88 /* AlleeSummary.swift */,
-				19629C01F5BBBACCD191C3F6E0BABB53 /* AlleeTransType.swift */,
-				7F55AEF4104FEBA53B369A98C98F2C29 /* OrdersBumpStatusDelegate.swift */,
-				E7EEA07C8763360C5C7CDD75535F2DF1 /* SocketNotifyBump.swift */,
-				68B22F2B4CFFEF5BC96F5C8EA1F0B242 /* SocketOrdersBumpRequest.swift */,
-				DCED4796F480FEC6A4A9277777324778 /* SocketOrdersBumpResponse.swift */,
-				9D37F7BC97AA9F32947F6C8FD1157BA0 /* SocketSendOrder.swift */,
-				487C39E3F77E9ED901C48BBA94D6E535 /* Frameworks */,
-				F17EEE752D662CCC56977EE429493857 /* Support Files */,
-			);
-			name = AlleeSDK;
-			path = AlleeSDK;
 			sourceTree = "<group>";
 		};
 		CB84D07FABD1B049A481F493DBF69DF0 /* Pods-AlleeSDKSample */ = {
@@ -281,6 +271,34 @@
 			);
 			sourceTree = "<group>";
 		};
+		CF790833CF15F17575C09B0607B3C39C /* FloatingPanel */ = {
+			isa = PBXGroup;
+			children = (
+				161B65FB53FDEC4C27D3DE98FCED1A53 /* FloatingPanelBackdropView.swift */,
+				84724360A0C4D99238BDACC4FBF78285 /* FloatingPanelBehavior.swift */,
+				AE4A55AD4DD5FE7FCE8A88360B9D1434 /* FloatingPanelController.swift */,
+				2651B46D26624F7B98848B424E823990 /* FloatingPanelCore.swift */,
+				A574DC44C35257F1C4A09E88EF1891DA /* FloatingPanelLayout.swift */,
+				B9D89A04C56C6C7FE08CCF470147F616 /* FloatingPanelSurfaceView.swift */,
+				8CECC9C8B6098B003E34605F16FD10AA /* FloatingPanelTransitioning.swift */,
+				B0AEF56CF87C0EE01362AA6AC84DDDB3 /* FloatingPanelView.swift */,
+				1749C69DCD7B56EA4FDBE65E96373B43 /* GrabberHandleView.swift */,
+				566B1B25CA474069E01D38689B35C4F5 /* Logger.swift */,
+				3F6EF5405F8966E88F553BE7140E1058 /* UIExtensions.swift */,
+				15F5995C7A1A2DB692AC43DD63F84984 /* Support Files */,
+			);
+			name = FloatingPanel;
+			path = FloatingPanel;
+			sourceTree = "<group>";
+		};
+		E2137EE4A7280443E123DE6BBEA70F6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FD31A6FCB132B010A8B8C6C4359AB22 /* BSocketHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,20 +306,6 @@
 				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		F17EEE752D662CCC56977EE429493857 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				25E023EE1E624F38A8D57BDCABDC6466 /* AlleeSDK.modulemap */,
-				49DAC0DB5C71FEFFCBF3EE787832652D /* AlleeSDK.xcconfig */,
-				86CB5F8500162C30C5E3043F1981A099 /* AlleeSDK-dummy.m */,
-				56B2EACC8867930477C5F60063936510 /* AlleeSDK-Info.plist */,
-				8C1A5CD7385F886663FB42C0E73E9BBE /* AlleeSDK-prefix.pch */,
-				69213FAEAFAA673543A31F9ABCEE0B72 /* AlleeSDK-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/AlleeSDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,9 +517,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		087FB9E108E90C0E155014B240F90159 /* Release */ = {
+		0D73EF4E615A8E45E36AB76CCB48B0D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49DAC0DB5C71FEFFCBF3EE787832652D /* AlleeSDK.xcconfig */;
+			baseConfigurationReference = 0DFA84EE1E22C121A6B3CD647CDFD4A9 /* AlleeSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -548,6 +552,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		0DFCF956605FD1D54A1036FF9A1E7EDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E38BD68E855D30B9C7A8082EBE17B8 /* AlleeSDK.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AlleeSDK/AlleeSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AlleeSDK/AlleeSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
+				PRODUCT_MODULE_NAME = AlleeSDK;
+				PRODUCT_NAME = AlleeSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -609,43 +648,6 @@
 			};
 			name = Release;
 		};
-		662939AB60AC6F861DA5F437D8435325 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E04902BAFA2976A3AF86264639D06F86 /* FloatingPanel.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FloatingPanel/FloatingPanel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FloatingPanel/FloatingPanel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/FloatingPanel/FloatingPanel.modulemap";
-				PRODUCT_MODULE_NAME = FloatingPanel;
-				PRODUCT_NAME = FloatingPanel;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7A4193DD55A27B67CAA92E1D9D352DC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0BCE8D85A1BDA2A8F9D5FF4A498AC0D3 /* Pods-AlleeSDKSample.release.xcconfig */;
@@ -685,9 +687,9 @@
 			};
 			name = Release;
 		};
-		7C3BBACD8A24FFC23C19E9322196DC12 /* Debug */ = {
+		8C99E11C628E1D571F2070B959E5AB79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E04902BAFA2976A3AF86264639D06F86 /* FloatingPanel.xcconfig */;
+			baseConfigurationReference = D592929BB8C597486008B2BEC7B04224 /* FloatingPanel.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -716,10 +718,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8D585F0E2A3D43E4E0F28346A4961D30 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -823,10 +826,11 @@
 			};
 			name = Debug;
 		};
-		F6D02CAC9B94B2A928389D50A8C5AB94 /* Debug */ = {
+		EC041AABABF9CC69FAC10B0017CC53DF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49DAC0DB5C71FEFFCBF3EE787832652D /* AlleeSDK.xcconfig */;
+			baseConfigurationReference = 653D633B4204AE86546E3F419D2AE65F /* FloatingPanel.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -836,22 +840,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AlleeSDK/AlleeSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AlleeSDK/AlleeSDK-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FloatingPanel/FloatingPanel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FloatingPanel/FloatingPanel-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/AlleeSDK/AlleeSDK.modulemap";
-				PRODUCT_MODULE_NAME = AlleeSDK;
-				PRODUCT_NAME = AlleeSDK;
+				MODULEMAP_FILE = "Target Support Files/FloatingPanel/FloatingPanel.modulemap";
+				PRODUCT_MODULE_NAME = FloatingPanel;
+				PRODUCT_NAME = FloatingPanel;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.1;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -873,8 +877,8 @@
 		6044DE3C7C1CBDBFC5A9C046CA3BD8D7 /* Build configuration list for PBXNativeTarget "FloatingPanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C3BBACD8A24FFC23C19E9322196DC12 /* Debug */,
-				662939AB60AC6F861DA5F437D8435325 /* Release */,
+				EC041AABABF9CC69FAC10B0017CC53DF /* Debug */,
+				8C99E11C628E1D571F2070B959E5AB79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -891,8 +895,8 @@
 		C5EDC42095F62116943E3DD68669D0B0 /* Build configuration list for PBXNativeTarget "AlleeSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6D02CAC9B94B2A928389D50A8C5AB94 /* Debug */,
-				087FB9E108E90C0E155014B240F90159 /* Release */,
+				0DFCF956605FD1D54A1036FF9A1E7EDB /* Debug */,
+				0D73EF4E615A8E45E36AB76CCB48B0D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
