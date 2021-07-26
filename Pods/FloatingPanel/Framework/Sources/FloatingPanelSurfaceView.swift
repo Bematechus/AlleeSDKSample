@@ -5,46 +5,24 @@
 
 import UIKit
 
+class FloatingPanelSurfaceContentView: UIView {}
+
 /// A view that presents a surface interface in a floating panel.
 public class FloatingPanelSurfaceView: UIView {
 
-    /// A GrabberHandleView object displayed at the top of the surface view.
-    ///
-    /// To use a custom grabber handle, hide this and then add the custom one
-    /// to the surface view at appropriate coordinates.
-    public let grabberHandle: GrabberHandleView = GrabberHandleView()
-
-    /// Offset of the grabber handle from the top
-    public var grabberTopPadding: CGFloat = 6.0 { didSet {
-        setNeedsUpdateConstraints()
-    } }
+    /// A GrabberHandleView object displayed at the top of the surface view
+    public var grabberHandle: GrabberHandleView!
 
     /// The height of the grabber bar area
-    public var topGrabberBarHeight: CGFloat {
-        return grabberTopPadding * 2 + grabberHandleHeight
+    public static var topGrabberBarHeight: CGFloat {
+        return Default.grabberTopPadding * 2 + GrabberHandleView.Default.height // 17.0
     }
 
-    /// Grabber view width and height
-    public var grabberHandleWidth: CGFloat = 36.0 { didSet {
-        setNeedsUpdateConstraints()
-    } }
-    public var grabberHandleHeight: CGFloat = 5.0 { didSet {
-        setNeedsUpdateConstraints()
-    } }
-
-    /// A root view of a content view controller
-    public weak var contentView: UIView!
-
-    /// The content insets specifying the insets around the content view.
-    public var contentInsets: UIEdgeInsets = .zero {
-        didSet {
-            // Needs update constraints
-            self.setNeedsUpdateConstraints()
-        }
-    }
+    /// A UIView object that can have the surface view added to it.
+    public var contentView: UIView!
 
     private var color: UIColor? = .white { didSet { setNeedsLayout() } }
-    var bottomOverflow: CGFloat = 0.0 // Must not call setNeedsLayout()
+    private var bottomOverflow: CGFloat = 0.0 // Must not call setNeedsLayout()
 
     public override var backgroundColor: UIColor? {
         get { return color }
@@ -55,10 +33,7 @@ public class FloatingPanelSurfaceView: UIView {
     ///
     /// `self.contentView` is masked with the top rounded corners automatically on iOS 11 and later.
     /// On iOS 10, they are not automatically masked because of a UIVisualEffectView issue. See https://forums.developer.apple.com/thread/50854
-    public var cornerRadius: CGFloat {
-        set { containerView.layer.cornerRadius = newValue; setNeedsLayout() }
-        get { return containerView.layer.cornerRadius }
-    }
+    public var cornerRadius: CGFloat = 0.0 { didSet { setNeedsLayout() } }
 
     /// A Boolean indicating whether the surface shadow is displayed.
     public var shadowHidden: Bool = false  { didSet { setNeedsLayout() } }
@@ -81,163 +56,120 @@ public class FloatingPanelSurfaceView: UIView {
     /// The color of the surface border.
     public var borderWidth: CGFloat = 0.0  { didSet { setNeedsLayout() } }
 
-    /// The margins to use when laying out the container view wrapping content.
-    public var containerMargins: UIEdgeInsets = .zero { didSet {
-        setNeedsUpdateConstraints()
-    } }
+    private var backgroundLayer: CAShapeLayer!  { didSet { setNeedsLayout() } }
 
-    /// The view presents an actual surface shape.
-    ///
-    /// It renders the background color, border line and top rounded corners,
-    /// specified by other properties. The reason why they're not be applied to
-    /// a content view directly is because it avoids any side-effects to the
-    /// content view.
-    public let containerView: UIView = UIView()
-
-    @available(*, unavailable, renamed: "containerView")
-    public var backgroundView: UIView!
-
-    private lazy var containerViewTopConstraint = containerView.topAnchor.constraint(equalTo: topAnchor, constant: containerMargins.top)
-    private lazy var containerViewHeightConstraint = containerView.heightAnchor.constraint(equalTo: heightAnchor, multiplier: 1.0)
-    private lazy var containerViewLeftConstraint = containerView.leftAnchor.constraint(equalTo: leftAnchor, constant: 0.0)
-    private lazy var containerViewRightConstraint = containerView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0.0)
-
-    /// The content view top constraint
-    private var contentViewTopConstraint: NSLayoutConstraint?
-    /// The content view left constraint
-    private var contentViewLeftConstraint: NSLayoutConstraint?
-    /// The content right constraint
-    private var contentViewRightConstraint: NSLayoutConstraint?
-    /// The content height constraint
-    private var contentViewHeightConstraint: NSLayoutConstraint?
-
-    private lazy var grabberHandleWidthConstraint = grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandleWidth)
-    private lazy var grabberHandleHeightConstraint = grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandleHeight)
-    private lazy var grabberHandleTopConstraint = grabberHandle.topAnchor.constraint(equalTo: topAnchor, constant: grabberTopPadding)
-
-    public override class var requiresConstraintBasedLayout: Bool { return true }
+    private struct Default {
+        public static let grabberTopPadding: CGFloat = 6.0
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubViews()
+        render()
     }
 
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        addSubViews()
+        render()
     }
 
-    private func addSubViews() {
+    private func render() {
         super.backgroundColor = .clear
         self.clipsToBounds = false
 
-        addSubview(containerView)
-        containerView.translatesAutoresizingMaskIntoConstraints = false
+        let backgroundLayer = CAShapeLayer()
+        layer.insertSublayer(backgroundLayer, at: 0)
+        self.backgroundLayer = backgroundLayer
+
+        let contentView = FloatingPanelSurfaceContentView()
+        addSubview(contentView)
+        self.contentView = contentView as UIView
+        contentView.backgroundColor = color
+        contentView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            containerViewTopConstraint,
-            containerViewLeftConstraint,
-            containerViewRightConstraint,
-            containerViewHeightConstraint,
+            contentView.topAnchor.constraint(equalTo: topAnchor, constant: 0.0),
+            contentView.leftAnchor.constraint(equalTo: leftAnchor, constant: 0.0),
+            contentView.rightAnchor.constraint(equalTo: rightAnchor, constant: 0.0),
+            contentView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0.0),
             ])
 
+        let grabberHandle = GrabberHandleView()
         addSubview(grabberHandle)
+        self.grabberHandle = grabberHandle
+
         grabberHandle.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            grabberHandleWidthConstraint,
-            grabberHandleHeightConstraint,
-            grabberHandleTopConstraint,
+            grabberHandle.topAnchor.constraint(equalTo: topAnchor, constant: Default.grabberTopPadding),
+            grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandle.frame.width),
+            grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandle.frame.height),
             grabberHandle.centerXAnchor.constraint(equalTo: centerXAnchor),
             ])
     }
 
-    public override func updateConstraints() {
-        containerViewTopConstraint.constant = containerMargins.top
-        containerViewLeftConstraint.constant = containerMargins.left
-        containerViewRightConstraint.constant = -containerMargins.right
-        containerViewHeightConstraint.constant = (containerMargins.bottom == 0) ? bottomOverflow : -(containerMargins.top + containerMargins.bottom)
-
-        contentViewTopConstraint?.constant = containerMargins.top + contentInsets.top
-        contentViewLeftConstraint?.constant = containerMargins.left + contentInsets.left
-        contentViewRightConstraint?.constant = containerMargins.right + contentInsets.right
-        contentViewHeightConstraint?.constant = -(containerMargins.top + containerMargins.bottom + contentInsets.top + contentInsets.bottom)
-
-        grabberHandleTopConstraint.constant = grabberTopPadding
-        grabberHandleWidthConstraint.constant = grabberHandleWidth
-        grabberHandleHeightConstraint.constant = grabberHandleHeight
-
-        super.updateConstraints()
-    }
-
     public override func layoutSubviews() {
         super.layoutSubviews()
-        log.debug("surface view frame = \(frame)")
 
-        containerView.backgroundColor = color
+        updateLayers()
+        updateContentViewMask()
 
-        updateShadow()
-        updateCornerRadius()
-        updateBorder()
+        contentView.layer.borderColor = borderColor?.cgColor
+        contentView.layer.borderWidth = borderWidth
+        contentView.backgroundColor = color
     }
 
-    private func updateShadow() {
+    private func updateLayers() {
+        log.debug("SurfaceView bounds", bounds)
+        
+        var rect = bounds
+        rect.size.height += bottomOverflow // Expand the height for overflow buffer
+        let path = UIBezierPath(roundedRect: rect,
+                                byRoundingCorners: [.topLeft, .topRight],
+                                cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+        backgroundLayer.path = path.cgPath
+        backgroundLayer.fillColor = color?.cgColor
+		
         if shadowHidden == false {
-            if #available(iOS 11, *) {
-                // For clear background. See also, https://github.com/SCENEE/FloatingPanel/pull/51.
-                layer.shadowColor = shadowColor.cgColor
-                layer.shadowOffset = shadowOffset
-                layer.shadowOpacity = shadowOpacity
-                layer.shadowRadius = shadowRadius
-            } else {
-                // Can't update `layer.shadow*` directly because of a UIVisualEffectView issue in iOS 10, https://forums.developer.apple.com/thread/50854
-                // Instead, a user should display shadow appropriately.
-            }
+            layer.shadowColor = shadowColor.cgColor
+            layer.shadowOffset = shadowOffset
+            layer.shadowOpacity = shadowOpacity
+            layer.shadowRadius = shadowRadius
         }
     }
 
-    private func updateCornerRadius() {
-        guard containerView.layer.cornerRadius != 0.0 else {
-            containerView.layer.masksToBounds = false
-            return
-        }
-        containerView.layer.masksToBounds = true
-        guard containerMargins.bottom == 0 else { return }
+    private func updateContentViewMask() {
         if #available(iOS 11, *) {
             // Don't use `contentView.clipToBounds` because it prevents content view from expanding the height of a subview of it
-            // for the bottom overflow like Auto Layout settings of UIVisualEffectView in Main.storyboard of Example/Maps.
+            // for the bottom overflow like Auto Layout settings of UIVisualEffectView in Main.storyborad of Example/Maps.
             // Because the bottom of contentView must be fit to the bottom of a screen to work the `safeLayoutGuide` of a content VC.
-            containerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            let maskLayer = CAShapeLayer()
+            var rect = bounds
+            rect.size.height += bottomOverflow
+            let path = UIBezierPath(roundedRect: rect,
+                                    byRoundingCorners: [.topLeft, .topRight],
+                                    cornerRadii: CGSize(width: cornerRadius, height: cornerRadius))
+            maskLayer.path = path.cgPath
+            contentView.layer.mask = maskLayer
         } else {
-            // Can't use `containerView.layer.mask` because of a UIVisualEffectView issue in iOS 10, https://forums.developer.apple.com/thread/50854
-            // Instead, a user should display rounding corners appropriately.
+            // Don't use `contentView.layer.mask` because of a UIVisualEffectView issue in iOS 10, https://forums.developer.apple.com/thread/50854
+            // Instead, a user can mask the content view manually in an application.
         }
     }
 
-    private func updateBorder() {
-        containerView.layer.borderColor = borderColor?.cgColor
-        containerView.layer.borderWidth = borderWidth
+    func set(bottomOverflow: CGFloat) {
+        self.bottomOverflow = bottomOverflow
+        updateLayers()
+        updateContentViewMask()
     }
 
-    func add(contentView: UIView) {
-        containerView.addSubview(contentView)
-        self.contentView = contentView
-        /* contentView.frame = bounds */ // MUST NOT: Because the top safe area inset of a content VC will be incorrect.
-        contentView.translatesAutoresizingMaskIntoConstraints = false
 
-        let topConstraint = contentView.topAnchor.constraint(equalTo: topAnchor, constant: containerMargins.top + contentInsets.top)
-        let leftConstraint = contentView.leftAnchor.constraint(equalTo: leftAnchor, constant: containerMargins.left + contentInsets.left)
-        let rightConstraint = rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: containerMargins.right + contentInsets.right)
-        let heightPadding = containerMargins.top + containerMargins.bottom + contentInsets.top + contentInsets.bottom
-        let heightConstraint = contentView.heightAnchor.constraint(equalTo: heightAnchor, constant: -heightPadding)
-        heightConstraint.priority = UILayoutPriority(999)
+    func add(childView: UIView) {
+        contentView.addSubview(childView)
+        childView.frame = contentView.bounds
+        childView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            topConstraint,
-            leftConstraint,
-            rightConstraint,
-            heightConstraint,
+            childView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0.0),
+            childView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 0.0),
+            childView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: 0.0),
+            childView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0.0),
             ])
-        self.contentViewTopConstraint = topConstraint
-        self.contentViewLeftConstraint = leftConstraint
-        self.contentViewRightConstraint = rightConstraint
-        self.contentViewHeightConstraint = heightConstraint
     }
 }

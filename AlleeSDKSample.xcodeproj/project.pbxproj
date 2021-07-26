@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E9AC9A38554CD67C3BE4B8E /* Pods_AlleeSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */; };
+		DDACC3CD3DE4F35B0B61A975 /* Pods_AlleeSDKSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054790765FB2C1CD523127CE /* Pods_AlleeSDKSample.framework */; };
 		FA0CE2E721C13B6E00C52F68 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA0CE2E621C13B6E00C52F68 /* Settings.bundle */; };
 		FA0CE2E921C13F3500C52F68 /* OrdersStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0CE2E821C13F3500C52F68 /* OrdersStatusViewController.swift */; };
 		FAB271A1215D52E70025AAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF035D0210B66FA005528C8 /* AppDelegate.swift */; };
@@ -52,12 +52,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		054790765FB2C1CD523127CE /* Pods_AlleeSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlleeSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlleeSDKSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlleeSDKSample/Pods-AlleeSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0CE2E621C13B6E00C52F68 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		FA0CE2E821C13F3500C52F68 /* OrdersStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersStatusViewController.swift; sourceTree = "<group>"; };
-		FA4914C92375153D00A24773 /* BSocketHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSocketHelper.framework; path = AlleeSDK/Frameworks/BSocketHelper.framework; sourceTree = SOURCE_ROOT; };
 		FAB271A6215D55BA0025AAD9 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		FADAEA05215D6193007E581B /* CustomOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOrder.swift; sourceTree = "<group>"; };
 		FADAEA0B215D666D007E581B /* JsonUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtil.swift; sourceTree = "<group>"; };
@@ -89,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E9AC9A38554CD67C3BE4B8E /* Pods_AlleeSDKSample.framework in Frameworks */,
+				DDACC3CD3DE4F35B0B61A975 /* Pods_AlleeSDKSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +107,7 @@
 		FA1798092119D00E00E4129E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA4914C92375153D00A24773 /* BSocketHelper.framework */,
-				08CFAC18048508A3C76F0EC1 /* Pods_AlleeSDKSample.framework */,
+				054790765FB2C1CD523127CE /* Pods_AlleeSDKSample.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -237,7 +235,7 @@
 				};
 			};
 			buildConfigurationList = FAF035C8210B66FA005528C8 /* Build configuration list for PBXProject "AlleeSDKSample" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -384,11 +382,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 59;
+				CURRENT_PROJECT_VERSION = 66;
 				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AlleeSDK/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -397,7 +396,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.4.2.0;
+				MARKETING_VERSION = 2.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample.ShareExtension;
@@ -413,11 +412,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 59;
+				CURRENT_PROJECT_VERSION = 66;
 				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AlleeSDK/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = ShareExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -426,7 +426,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.4.2.0;
+				MARKETING_VERSION = 2.5;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -560,28 +560,31 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B7CDD9DC817E194FB25FA85C /* Pods-AlleeSDKSample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = AlleeSDKSample/AlleeSDKSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 59;
+				CURRENT_PROJECT_VERSION = 66;
 				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/AlleeSDK/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/BSocketHelper",
 				);
 				INFOPLIST_FILE = AlleeSDKSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.2.0;
+				MARKETING_VERSION = 2.5;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -590,28 +593,31 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8150D01A15A6FAC22C3E70A /* Pods-AlleeSDKSample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
 				CODE_SIGN_ENTITLEMENTS = AlleeSDKSample/AlleeSDKSample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 59;
+				CURRENT_PROJECT_VERSION = 66;
 				DEVELOPMENT_TEAM = 6L2ESX8Q6B;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 					"$(PROJECT_DIR)/AlleeSDK/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/BSocketHelper",
 				);
 				INFOPLIST_FILE = AlleeSDKSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.2.0;
+				MARKETING_VERSION = 2.5;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bematech.AlleeSDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
