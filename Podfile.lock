@@ -1,20 +1,20 @@
 PODS:
   - AlleeSDK (1.7)
-  - FloatingPanel (1.2.3)
+  - FloatingPanel (1.7.5)
 
 DEPENDENCIES:
   - AlleeSDK
   - FloatingPanel
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AlleeSDK
     - FloatingPanel
 
 SPEC CHECKSUMS:
   AlleeSDK: 03c53a548d09e9a51b27e935ab654a0cd95bc687
-  FloatingPanel: 3b3521b931b58ade0572837ec81c8c7dc638325d
+  FloatingPanel: bb17fd6fc7ae519f877f7bd30f4f6115a78acf07
 
 PODFILE CHECKSUM: 3e1e2341141d790a603bce0f100c8790a8de2b30
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.9.1
