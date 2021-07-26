@@ -1,0 +1,3 @@
+[submodule "Frameworks/BSocketHelper"]
+	path = Frameworks/BSocketHelper
+	url = https://github.com/Bematechus/BSocketHelper.git

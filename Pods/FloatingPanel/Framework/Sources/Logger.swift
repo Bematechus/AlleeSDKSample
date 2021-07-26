@@ -19,17 +19,29 @@ struct Logger {
         case info = 1
         case warning = 2
         case error = 3
+        case fault = 4
 
-        var displayName: String {
+        var name: String {
+            switch self {
+            case .debug: return "DEBUG"
+            case .info: return "INFO"
+            case .warning: return "WARNING"
+            case .error: return "ERROR"
+            case .fault: return "FAULT"
+            }
+        }
+        var shortName: String {
             switch self {
             case .debug:
                 return "D/"
             case .info:
                 return "I/"
             case .warning:
-                return "Warning:"
+                return "W/"
             case .error:
-                return "Error:"
+                return "E/"
+            case .fault:
+                return "F/"
             }
         }
         @available(iOS 10.0, *)
@@ -37,40 +49,31 @@ struct Logger {
             switch self {
             case .debug: return .debug
             case .info: return .info
-            case .warning: return .default
+            case .warning: return .info
             case .error: return .error
+            case .fault: return .fault
             }
         }
 
-        static func < (lhs: Logger.Level, rhs: Logger.Level) -> Bool {
+        public static func < (lhs: Logger.Level, rhs: Logger.Level) -> Bool {
             return lhs.rawValue < rhs.rawValue
         }
     }
 
-    typealias Hook = ((String, Level) -> Void)
-    var hook: Hook?
-
-    fileprivate init() {
+    init() {
         osLog = OSLog(subsystem: "com.scenee.FloatingPanel", category: "FloatingPanel")
     }
 
     private func log(_ level: Level, _ message: Any, _ arguments: [Any], function: String, line: UInt) {
+        #if __FP_LOG
         _ = s.wait(timeout: .now() + 0.033)
         defer { s.signal() }
 
         let extraMessage: String = arguments.map({ String(describing: $0) }).joined(separator: " ")
-        let log: String = {
-            switch level {
-            case .debug:
-                return "\(level.displayName) \(message) \(extraMessage) (\(function):\(line))"
-            default:
-                return "\(level.displayName) \(message) \(extraMessage)"
-            }
-        }()
-
-        hook?(log, level)
+        let log = "\(level.shortName) \(message) \(extraMessage) (\(function):\(line))"
 
         os_log("%@", log: osLog, type: level.osLogType, log)
+        #endif
     }
 
     private func getPrettyFunction(_ function: String, _ file: String) -> String {
@@ -82,9 +85,7 @@ struct Logger {
     }
 
     func debug(_ log: Any, _ arguments: Any..., function: String = #function, file: String  = #file, line: UInt = #line) {
-        #if __FP_LOG
         self.log(.debug, log, arguments, function: getPrettyFunction(function, file), line: line)
-        #endif
     }
 
     func info(_ log: Any, _ arguments: Any..., function: String = #function, file: String  = #file, line: UInt = #line) {
@@ -97,5 +98,9 @@ struct Logger {
 
     func error(_ log: Any, _ arguments: Any..., function: String = #function, file: String  = #file, line: UInt = #line) {
         self.log(.error, log, arguments, function: getPrettyFunction(function, file), line: line)
+    }
+
+    func fault(_ log: Any, _ arguments: Any..., function: String = #function, file: String  = #file, line: UInt = #line) {
+        self.log(.fault, log, arguments, function: getPrettyFunction(function, file), line: line)
     }
 }
